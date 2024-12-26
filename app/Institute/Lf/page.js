@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>Laboratory Facilities</div>
+    <div>laboratory Features</div>
   )
 }
