@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 const WinterCoursesPage = () => {
@@ -20,116 +21,130 @@ const WinterCoursesPage = () => {
     {
       id: 1,
       name: "Blockchain Technology & Applications- IIITDM/IITK/NITP",
-      BrochureLink:
+      BrochureLink: "BlockchainTechnology",
+      pdfLink:
         "../uploads20/Brochoure- Blockchain and its Application-20.12.2021.pdf",
       date: "3 Jan - 8 Jan 2022",
       coordinator: "Dr. Prabhat Kumar",
-      "Registration Link": "https://forms.gle/dLufjjjG6Wrw9Mzg9",
+      registrationLink: "https://forms.gle/dLufjjjG6Wrw9Mzg9",
     },
     {
       id: 2,
       name: "Machine Learning Application in Signal Processing and Communication",
-      BrochureLink:
+      BrochureLink: "MachineLearning",
+      pdfLink:
         "../uploads20/Brochure- ML Application for Signal Prcessing and Communication Engineering- 03rd Jan, 2022.pdf",
       date: "3 Jan - 8 Jan 2022",
       coordinator: "Dr. Bharat Gupta & Dr. Rakesh Ranjan",
-      "Registration Link": "https://forms.gle/fAuKP5NXmW9jgMKq6",
+      registrationLink: "https://forms.gle/fAuKP5NXmW9jgMKq6",
     },
     {
       id: 3,
       name: "Scientific Computation and GUI Development Using MATLAB",
-      BrochureLink: "./Brochure/SCDM Flyer.pdf",
+      BrochureLink: "ScientificComputation",
+      pdfLink: "./Brochure/SCDM Flyer.pdf",
       date: "21 Mar - 31 Mar 2022",
       coordinator: "Dr. Bharat Gupta & Dr. Mukesh Kumar",
-      "Registration Link": "https://forms.gle/xQudVqnAgRRhS38s5",
+      registrationLink: "https://forms.gle/xQudVqnAgRRhS38s5",
     },
     {
       id: 4,
       name: "Data Science for All",
-      BrochureLink: "./Brochure/Brochure_DataScienceForAll.pdf",
+      BrochureLink: "DS",
+      pdfLink: "./Brochure/Brochure_DataScienceForAll.pdf",
       date: "22 Mar - 1 Apr 2022",
       coordinator: "Dr. M P Singh",
-      "Registration Link": "https://forms.gle/9Xcj8uStDo64r8Ry6",
+      registrationLink: "https://forms.gle/9Xcj8uStDo64r8Ry6",
     },
     {
       id: 5,
       name: "Electric Vehicles & mobility",
-      BrochureLink: "./Brochure/Electric Vehicle and Moility.pdf",
+      BrochureLink: "EV",
+      pdfLink: "./Brochure/Electric Vehicle and Moility.pdf",
       date: "14 Mar - 26 Mar 2022",
       coordinator: "Dr. Amitesh Kumar and Dr. D K Dheer",
-      "Registration Link": "https://forms.gle/gKx877ncytW3i56e9",
+      registrationLink: "https://forms.gle/gKx877ncytW3i56e9",
     },
     {
       id: 6,
       name: "Natural Language Processing",
-      BrochureLink: "./Brochure/NLP_FDP_2022.pdf",
+      BrochureLink: "NLP",
+      pdfLink: "./Brochure/NLP_FDP_2022.pdf",
       date: "7 Feb - 18 Feb 2022",
       coordinator: "Dr. J P Singh, Dr. G Pradhan & Dr. Bhaskar Mondal",
-      "Registration Link": "https://forms.gle/Jt6khAPa2ti15wcp9",
+      registrationLink: "https://forms.gle/Jt6khAPa2ti15wcp9",
     },
     {
       id: 7,
       name: "RISC-V VLSI Implementation Flow: RTL2GDS",
-      BrochureLink: "./Brochure/JOINT FDP - EICT _ RISC2022.pdf",
+      BrochureLink: "RISC",
+      pdfLink: "./Brochure/JOINT FDP - EICT _ RISC2022.pdf",
       date: "7 Feb - 12 Feb 2022",
       coordinator: "Dr. Sangeeta Singh and Dr. Pankaj Kumar",
-      "Registration Link": "https://forms.gle/7uYTCMpTmvFe14n4A",
+      registrationLink: "https://forms.gle/7uYTCMpTmvFe14n4A",
     },
     {
       id: 8,
       name: "IoT & Applications (smart systems)",
-      BrochureLink: "./Brochure/IoT & Applications.pdf",
+      BrochureLink: "IOT",
+      pdfLink: "./Brochure/IoT & Applications.pdf",
       date: "14 Feb - 19 Feb 2022",
       coordinator: "Dr. Bharat Gupta & Dr. Suyel Namasudra",
-      "Registration Link": "https://forms.gle/q27Rm25rZbApVYNc7",
+      registrationLink: "https://forms.gle/q27Rm25rZbApVYNc7",
     },
     {
       id: 9,
       name: "Machine Learning for Computer Vision",
-      BrochureLink: "./Brochure/ML for Computer Vision.pdf",
+      BrochureLink: "MLCV",
+      pdfLink: "./Brochure/ML for Computer Vision.pdf",
       date: "21 Feb - 4 Mar 2022",
       coordinator: "Dr. M P Singh and Dr. Suyel Namasudra",
-      "Registration Link": "https://forms.gle/CtH9hHWYwYTECcr49",
+      registrationLink: "https://forms.gle/CtH9hHWYwYTECcr49",
     },
     {
       id: 10,
       name: "Numerical & engineering computation, optimization for Physicists, Scientists & Engineers using open-source- SCILAB",
-      BrochureLink: "wintercourses2022.php",
+      BrochureLink: "NEC",
+      pdfLink: "",
       date: "21 Feb - 4 Mar 2022",
       coordinator: "Dr.Bharat Gupta & Dr. Rakesh Ranjan",
-      "Registration Link": "https://forms.gle/QqaWsc9K6CE3W2Tj6",
+      registrationLink: "https://forms.gle/QqaWsc9K6CE3W2Tj6",
     },
     {
       id: 11,
       name: "Android programming & applications",
-      BrochureLink: "wintercourses2022.php",
+      BrochureLink: "AndroidProgramming",
+      pdfLink: "",
       date: "7 Mar - 12 Mar 2022",
       coordinator: "Dr. Prabhat Kumar and Dr. Somaraju Suvari",
-      "Registration Link": "https://forms.gle/fC1rnTacbmDppGpW7",
+      registrationLink: "https://forms.gle/fC1rnTacbmDppGpW7",
     },
     {
       id: 12,
       name: "Research Methodology",
-      BrochureLink: "wintercourses2022.php",
+      BrochureLink: "ResearchMethodology",
+      pdfLink: "",
       date: "14 Mar - 19 Mar 2022",
       coordinator: "Dr. J P Singh & Dr. Bharat Gupta",
-      "Registration Link": "https://forms.gle/jzY9GaNSaLdcwmSh6",
+      registrationLink: "https://forms.gle/jzY9GaNSaLdcwmSh6",
     },
     {
       id: 13,
       name: "Designing With FPGAs (Intel)",
-      BrochureLink: "wintercourses2022.php",
+      BrochureLink: "FPGA",
+      pdfLink: "",
       date: "14 Mar - 19 Mar 2022",
       coordinator: "Dr. Sangeeta Singh and Dr. Meena Panchore",
-      "Registration Link": "https://forms.gle/TCJaYxxMwT8BpgZT9",
+      registrationLink: "https://forms.gle/TCJaYxxMwT8BpgZT9",
     },
     {
       id: 14,
       name: "AI & Machine Learning for IoT/EDA",
-      BrochureLink: "./Brochure/22.01.20-AI & ML for IoT EDA.pdf",
+      BrochureLink: "AIML",
+      pdfLink: "./Brochure/22.01.20-AI & ML for IoT EDA.pdf",
       date: "7 Mar - 19 Mar 2022",
       coordinator: "Dr. Bharat Gupta & Dr. Bal Chand Nagar",
-      "Registration Link": "https://forms.gle/RtFg5rDwMJorxdQg6",
+      registrationLink: "https://forms.gle/RtFg5rDwMJorxdQg6",
     },
   ];
 
@@ -197,17 +212,20 @@ const WinterCoursesPage = () => {
                       {course.id}
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm font-medium">{course.name}</span>
+                      <span className="text-sm font-medium">
+                        <Link href={`JWP2022/${course.BrochureLink}`}>
+                          {course.name}
+                        </Link>
+                      </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      <a
-                        href={course.BrochureLink}
-                        className="text-blue-600 hover:text-blue-800 hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Details
-                      </a>
+                      {course.pdfLink ? (
+                        <Link href={course.pdfLink}>View Details</Link>
+                      ) : (
+                        <Link href={`JWP2022/${course.BrochureLink}`}>
+                          View Details
+                        </Link>
+                      )}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {course.date}
