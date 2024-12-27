@@ -38,12 +38,12 @@ const navItems = [
       },
       {
         label: "Impelmentation Strategy",
-        link: "/Institute/Is",
+        link: "/Institute/ImplementationStrategy",
 
       },
       {
         label: "Infrastructure",
-        link: "/Institute/Ifts",
+        link: "/Institute/Infrastructure",
 
       },
       {
@@ -66,7 +66,7 @@ const navItems = [
       },
       {
         label: "Laboratory Facilities",
-        link: "/Institute/Lf",
+        link: "/Institute/Lab",
 
       },
       {
@@ -129,27 +129,27 @@ const navItems = [
     children: [
       {
         label: "Upcoming Programs",
-        link: "/Joint/Up",
+        link: "/Joint/Upcoming",
       },
       {
         label: "Joint Summer Programs 2022",
-        link: "/Joint/Jsp",
+        link: "/Joint/JSP2022",
       },
       {
         label: "Joint Winter Programs 2022",
-        link: "/Joint/Jwp",
+        link: "/Joint/JWP2022",
       },
       {
         label: "Summer Joint Courses 2021",
-        link: "/Joint/Sjc",
+        link: "/Joint/SJC2021",
       },
       {
-        label: "spring Joint Courses 2021",
-        link: "/Joint/Spjc",
+        label: "Spring Joint Courses 2021",
+        link: "/Joint/SPJC2021",
       },
       {
         label: "Summer Joint Courses 2020",
-        link: "/Joint/Sjcs",
+        link: "/Joint/SJC2020",
       },
     ],
   },
