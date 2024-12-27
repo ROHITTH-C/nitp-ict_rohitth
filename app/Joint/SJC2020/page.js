@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 const SummerCoursesPage = () => {
@@ -21,7 +22,7 @@ const SummerCoursesPage = () => {
       id: 1,
       name: "Machine Learning for Computer Vision",
       date: "29 June – 10 July, 2020",
-      brochure: "machinelearning.php",
+      BrochureLink: "MLCV",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScBCng4WHpc6wRQ7skxM1LoGjnebwjR_g4mP2UV5QVHBEH-Kw/viewform",
     },
@@ -29,7 +30,7 @@ const SummerCoursesPage = () => {
       id: 2,
       name: "Quantum Computing",
       date: "07th August – 12th August, 2020 (Tentative)",
-      brochure: "quantumcomputing.php",
+      BrochureLink: "QuantumComputing",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSfuSHQynBL2m9lEwdcCWyZr_wMZ0nN0AGtTj3OggXrq5m5aJg/viewform?vc=0&c=0&w=1",
     },
@@ -37,7 +38,7 @@ const SummerCoursesPage = () => {
       id: 3,
       name: "Advanced Optimization Techniques and Hands-on with MATLAB/SCILAB",
       date: "13th July – 24th July, 2020",
-      brochure: "handsonmatlab.php",
+      BrochureLink: "MATLAB",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSegvXCLoElM5BgPj4XLFkXLhMbFSN0hhxvst5lG6Zh69Ne6oQ/viewform",
     },
@@ -45,56 +46,56 @@ const SummerCoursesPage = () => {
       id: 4,
       name: "Embedded UVM open source Emulation & Functional Verification",
       date: "13th July – 24th July, 2020",
-      brochure: "embeddeduvm.php",
+      BrochureLink: "UVM",
       registrationLink: "https://forms.gle/J3SM9eaTTesnQkxh6",
     },
     {
       id: 5,
       name: "Wireless Communication Technologies for IoT",
       date: "27th July – 07th August, 2020",
-      brochure: "wirelessiot.php",
+      BrochureLink: "WirelessCT",
       registrationLink: "https://forms.gle/mfuW4Htgp2u9UM1W6",
     },
     {
       id: 6,
       name: "Data Science for All",
       date: "27th July – 07th August, 2020",
-      brochure: "datascience.php",
+      BrochureLink: "DS",
       registrationLink: "https://forms.gle/N3WZZtJC41E9qHUo8",
     },
     {
       id: 7,
       name: "ICT Tools for Teaching, Learning process & Institutes",
       date: "10th August – 21st August, 2020",
-      brochure: "icttools.php",
+      BrochureLink: "ICTTools",
       registrationLink: "https://forms.gle/orqpstgdFtZJiYDj6",
     },
     {
       id: 8,
       name: "Demystifying 5G RF ASICs",
       date: "24th August – 04th September, 2020",
-      brochure: "demystifying5g.php",
+      BrochureLink: "ASIC",
       registrationLink: "https://forms.gle/8kze6yw8BHVUqKXX7",
     },
     {
       id: 9,
       name: "Python Programming",
       date: "07th September – 18th September, 2020",
-      brochure: "pythonprogrm.php",
+      BrochureLink: "Python",
       registrationLink: "https://forms.gle/h9CWtvaVzy7y9mmLA",
     },
     {
       id: 10,
       name: "Digital Tools for Writing, Authoring and reviewing manuscripts",
       date: "21st September – 02nd October, 2020",
-      brochure: "digitaltools.php",
+      BrochureLink: "DigitalTools",
       registrationLink: "https://forms.gle/UKb7q5bDf5qrYUyd6",
     },
     {
       id: 11,
       name: "Cyber Security",
       date: "05th October – 16th October, 2020",
-      brochure: "cybersecurity.php",
+      BrochureLink: "CyberSecurity",
       registrationLink: "https://forms.gle/vBXnf3X9XKDMxpPS7",
     },
   ];
@@ -159,13 +160,19 @@ const SummerCoursesPage = () => {
                       {course.id}
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm font-medium">{course.name}</span>
+                      <span className="text-sm font-medium">
+                        <Link href={`SJC2020/${course.BrochureLink}`}>
+                          {course.name}
+                        </Link>
+                      </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {course.date}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      {course.brochure}
+                      <Link href={`SJC2020/${course.BrochureLink}`}>
+                        View Details
+                      </Link> 
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       <a

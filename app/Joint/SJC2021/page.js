@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 const SummerCoursesPage = () => {
@@ -20,75 +21,85 @@ const SummerCoursesPage = () => {
     {
       id: 1,
       name: "Social Robotics & AI",
+      BrochureLink: "RobotAI",
       date: "28th June – 4th July, 2021",
-      coordinator: "Dr Somaraju Suvvari, NIT Patna & Dr. Bharat Gupta, NIT Patna",
-      registrationLink: "https://forms.gle/9Rnvw1c3PNgRtQge7"
+      coordinator:
+        "Dr Somaraju Suvvari, NIT Patna & Dr. Bharat Gupta, NIT Patna",
+      registrationLink: "https://forms.gle/9Rnvw1c3PNgRtQge7",
     },
     {
       id: 2,
       name: "Digital Tools for Writing, Authoring and reviewing manuscripts",
+      BrochureLink: "DigitalTools",
       date: "12th July – 23rd July, 2021",
       coordinator: "Dr. Bharat Gupta, NIT Patna",
-      registrationLink: "https://forms.gle/MurfmsRMLEtqRUHW9"
+      registrationLink: "https://forms.gle/MurfmsRMLEtqRUHW9",
     },
     {
       id: 3,
       name: "Programming in Python",
+      BrochureLink: "Python",
       date: "26th July – 6th August, 2021",
       coordinator: "Dr. Prabhat Kumar, NIT Patna",
-      registrationLink: "https://forms.gle/sq5gg5X2sNqAVeVP7"
+      registrationLink: "https://forms.gle/sq5gg5X2sNqAVeVP7",
     },
     {
       id: 4,
       name: "Quantum Computing",
+      BrochureLink: "QuantumComputing",
       date: "Sept 27 – Oct 8, 2021",
       coordinator: "Dr. J P Singh, NIT Patna & Dr. M P Singh, NIT Patna",
-      registrationLink: "https://forms.gle/WT3Wb4DrNpcm4PB49"
+      registrationLink: "https://forms.gle/WT3Wb4DrNpcm4PB49",
     },
     {
       id: 5,
       name: "Deep Learning & Applications (Parallel Architectures)",
+      BrochureLink: "DeepLearning",
       date: "23rd August – 3rd Sep, 2021",
       coordinator: "Dr. M P Singh, NIT Patna",
-      registrationLink: "https://forms.gle/JZFKZHCYBhxxgyc68"
+      registrationLink: "https://forms.gle/JZFKZHCYBhxxgyc68",
     },
     {
       id: 6,
       name: "Advanced Optimization Techniques and Hands-on with MATLAB/SCILAB",
+      BrochureLink: "MATLAB",
       date: "6th Sep – 17th Sep, 2021",
       coordinator: "Dr. J P Singh, NIT Patna & Dr. Rakesh Ranjan, NIT Patna",
-      registrationLink: "https://forms.gle/L3EQ2PKx1dkTWFPL8"
+      registrationLink: "https://forms.gle/L3EQ2PKx1dkTWFPL8",
     },
     {
       id: 7,
       name: "SuperX- Operating Systems- Linux",
+      BrochureLink: "SuperX",
       date: "20th Sep – 1st Oct, 2021",
       coordinator: "Dr. M P Singh, NIT Patna & Dr. Suyel Namasudra, NIT Patna",
-      registrationLink: "https://forms.gle/7QZdugMmnhoMost78"
+      registrationLink: "https://forms.gle/7QZdugMmnhoMost78",
     },
     {
       id: 8,
       name: "MATLAB Programming for Additive Manufacturing and 3D Printing (MPAM)",
+      BrochureLink: "MPAM",
       date: "20th Sep – 1st Oct, 2021",
       coordinator: "Dr. Bharat Gupta, NIT Patna",
-      registrationLink: "https://forms.gle/Q8i8uzsKfmDB4KXk7"
+      registrationLink: "https://forms.gle/Q8i8uzsKfmDB4KXk7",
     },
     {
       id: 9,
       name: "Numerical Analysis & optimization for Physicists, Scientists & Engineers using open-source- SCILAB",
+      BrochureLink: "NumericalComputation",
       date: "4th Oct – 15th Oct, 2021",
       coordinator: "Dr. Rakesh Ranjan, NIT Patna & Dr. Bharat Gupta, NIT Patna",
-      registrationLink: "https://forms.gle/DrJs2pxXToQzoApw6"
+      registrationLink: "https://forms.gle/DrJs2pxXToQzoApw6",
     },
     {
       id: 10,
       name: "Open Power RISC architecture Design (Industry IBM)",
+      BrochureLink: "OpenPower",
       date: "18th Oct – 29th Oct, 2021",
       coordinator: "Dr. Sangeeta Singh, NITP & Mr. Pankaj Kumar, NITP",
-      registrationLink: "https://forms.gle/tocoszZ1cFsWB2tc6"
-    }
-  ]
-  
+      registrationLink: "https://forms.gle/tocoszZ1cFsWB2tc6",
+    },
+  ];
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -151,7 +162,11 @@ const SummerCoursesPage = () => {
                       {course.id}
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm font-medium">{course.name}</span>
+                      <span className="text-sm font-medium">
+                        <Link href={`SJC2021/${course.BrochureLink}`}>
+                          {course.name}
+                        </Link>
+                      </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {course.date}

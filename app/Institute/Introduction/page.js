@@ -11,11 +11,11 @@ const IntroductionPage = () => {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-2/3">
             <div className="text-base">
-              DeitY has sponsored a scheme entitled "Scheme of Financial
-              Assistance for setting up of Electronics and ICT Academies". The
-              objective of the above scheme is to set up seven (07) Electronics
-              and ICT Academies as a unit in IITs, NITs, IIITs etc. for
-              faculty/mentor development/up gradation to improve the
+              DeitY has sponsored a scheme entitled &#34;Scheme of Financial
+              Assistance for setting up of Electronics and ICT Academies&#34;.
+              The objective of the above scheme is to set up seven (07)
+              Electronics and ICT Academies as a unit in IITs, NITs, IIITs etc.
+              for faculty/mentor development/up gradation to improve the
               employability of the graduates/ diploma holders in various
               streams, through collaboration of States/Union Territories with
               financial assistance from the Central Government. Electronics and

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 const SummerCoursesPage = () => {
@@ -21,7 +22,7 @@ const SummerCoursesPage = () => {
       id: 1,
       name: "Machine Learning for computer vision",
       date: "01 Feb – 12 Feb, 2021",
-      brochure: "mlspring.php",
+      BrochureLink: "MLCV",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScgegJvO1ZcTYNI5mFxXDrBkjP1jnXYCQbo5Y1RY2I7NzMPjw/closedform",
     },
@@ -29,7 +30,7 @@ const SummerCoursesPage = () => {
       id: 2,
       name: "Advanced Communication & Antennas",
       date: "15th Feb – 26th Feb, 2021",
-      brochure: "advancedcommunication.php",
+      BrochureLink: "AdvanceCommunication",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScYbL2R8a0TamHDaNd__yfBNk4Zaw1csNPSK1euDWLbvgvjQA/viewform",
     },
@@ -37,7 +38,7 @@ const SummerCoursesPage = () => {
       id: 3,
       name: "5G Design: Journey from Devices to Circuits",
       date: "01st March – 12th March, 2021",
-      brochure: "fivegdesign.php",
+      BrochureLink: "FiveGDesign",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScFDmQbT6WL3K_wQlii-Fxgk8qmDTbsJaAoQXBQRBuKoRRNgA/viewform",
     },
@@ -45,28 +46,28 @@ const SummerCoursesPage = () => {
       id: 4,
       name: "ICT Tools for Teaching, Learning process & Institutes",
       date: "15th March – 26th March, 2021",
-      brochure: "icttoolsspring.php",
+      BrochureLink: "ICTTools",
       registrationLink: "https://forms.gle/QMKwhMcxLcZKB7hZ6",
     },
     {
       id: 5,
       name: "RISC-V VLSI Implementation Flow: RTL2GDS",
       date: "27th March – 10th April, 2021",
-      brochure: "rtlgds.php",
+      BrochureLink: "RISC",
       registrationLink: "https://forms.gle/zMoyVemCosbQv92q6",
     },
     {
       id: 6,
       name: "Data Science for All",
       date: "12th April – 23rd April, 2021",
-      brochure: "datascienceall.php",
+      BrochureLink: "DS",
       registrationLink: "https://forms.gle/a5efmpSvoHRptCnv7",
     },
     {
       id: 7,
       name: "Designing With FPGAs (Intel)",
       date: "19th April – 30th April, 2021",
-      brochure: "fgpaintel.php",
+      BrochureLink: "FPGA",
       registrationLink: "https://forms.gle/jdYUYwPzLr2zHeat7",
     },
   ];
@@ -132,13 +133,19 @@ const SummerCoursesPage = () => {
                       {course.id}
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm font-medium">{course.name}</span>
+                      <span className="text-sm font-medium">
+                        <Link href={`SPJC2021/${course.BrochureLink}`}>
+                          {course.name}
+                        </Link>
+                      </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {course.date}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      {course.brochure}
+                      <Link href={`SPJC2021/${course.BrochureLink}`}>
+                        View Details
+                      </Link>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       <a

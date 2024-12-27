@@ -14,7 +14,7 @@ const Infrastructure = () => {
           </h3>
           
           <ul className="list-disc pl-6 space-y-2">
-            <li>List of Classrooms with seating capacity: 4 large class rooms with 100 student's capacity</li>
+            <li>List of Classrooms with seating capacity: 4 large class rooms with 100 student&#39;s capacity</li>
             <li>List of Labs along with major equipment: 5 laboratories with modest facility are available. New laboratories will be developed under this scheme for faculty training</li>
             <li>Existing manpower and other personnel with names available for the project on full-time basis.</li>
             <li>Availability of administrative Structure for operationalization of actual faculty training of the Academy within the institute.</li>
