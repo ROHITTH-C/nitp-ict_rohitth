@@ -24,8 +24,7 @@ const MLComputerVision = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Machine Learning for Computer Vision
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const MLComputerVision = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/CtH9hHWYwYTECcr49"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const MLComputerVision = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Prof. Aparajita Ojha, IIITDM Jabalpur</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +61,11 @@ const MLComputerVision = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Prof. M. P. Singh, NIT Patna</li>
+                <li className="ml-4">Dr. Suyel Namasudra, NIT Patna</li>
+                <li className="ml-4">Dr. R. Balasubrmanian, IIT Roorkee</li>
+                <li className="ml-4">Prof. RBV Subramanyam, NIT Warangal</li>
+                <li className="ml-4">Dr. Meenakshi Tripathi, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -118,17 +115,12 @@ const MLComputerVision = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>EXPERTS/SPEAKERS -</strong> Prof. Shantanu Chaudhury,
+              Director IIT Jodhpur; Dr. Suresh Sundaram, IITG; Prof. H.
+              Fujiyoshi, Chubu Univ. Japan; Prof. Barbara Zitova, Acad Sci.
+              Czech Republic; Dr. Amit Sethi, IITB; Prof. Sumantra Dutta Roy,
+              IITD; Prof. P. Guha, Prof. Aparajita Ojha, IIITDM Jabalpur, Dr.
+              Santosh Viparthi, MNIT Jaipur
             </p>
           </div>
 
@@ -148,119 +140,60 @@ const MLComputerVision = () => {
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
+                      Introduction to Image Processing and Computer Vision (CV),
+                      Main Goals and Challenges of CV, Image Processing Goals
+                      and Tasks
                     </li>
                     <li className="break-words">
-                      <strong>Bayesian Learning</strong>
+                      Traditional Approaches in Image Processing, Feature
+                      Extraction and Their Applications to Image Processing:
+                      Natural Image Classification, Image Enhancement, Edge
+                      Detection, Segmentation, Image Denoising
                     </li>
                     <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
+                      Introduction to Artificial Intelligence (AI) and Machine
+                      Learning (ML), Supervised and Unsupervised Learning,
+                      Traditional ML Approaches
                     </li>
                   </ul>
                 </div>
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
+                      Neural Network as a Learning Machine, Forward and Backward
+                      Propagation, Applications in Computer Vision, Image
+                      Classification
                     </li>
                     <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
+                      Training Neural Networks, Optimization, Regularization
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
+                      Introduction to Deep Learning (DL), Basic Differences
+                      Between Conventional ML and DL Approaches, Challenges in
+                      Training Deep Neural Networks, Vanishing/Exploding
+                      Gradient Problems
                     </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
-                    </li>
+                    <li className="break-words">Recent Trends in ML for CV</li>
                   </ul>
                 </div>
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
+                      Introduction to Convolutional Neural Networks, The
+                      Convolution Operation, Basic Architecture of a Convolution
+                      Neural Network, Pooling and Batch Normalization Layers
                     </li>
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
+                      CNNs as Feature Extractors, Image Classification Using CNN
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
+                      State of the Art Deep CNN Architectures, CNN for Image
+                      Enhancement and Segmentation
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
+                      Autoencoder for Feature Extraction and Image Enhancement,
+                      Applications of CNN in Agriculture, Medical Image
+                      Analysis, and Satellite Imagery
                     </li>
                   </ul>
                 </div>

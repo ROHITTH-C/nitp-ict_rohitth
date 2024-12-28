@@ -24,8 +24,7 @@ const AndroidProgramming = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Android programming & applications
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const AndroidProgramming = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/fC1rnTacbmDppGpW7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const AndroidProgramming = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Gaurav Trivedi, IIT Guwahati</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +61,15 @@ const AndroidProgramming = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. Prabhat Kumar, NIT Patna</li>
+                <li className="ml-4">Dr. Somraju Suvari, NIT Patna</li>
+                <li className="ml-4">Dr. Amey Karkare, IIT Kanpur</li>
+                <li className="ml-4">Dr. Sandeep Kumar Garg, IIT Roorkee</li>
+                <li className="ml-4">
+                  Dr. Kusum Kumari Bharti, IIITDM Jabalpur
+                </li>
+                <li className="ml-4">Dr. D. Gopalani, MNIT Jaipur</li>
+                <li className="ml-4">Dr. Ramesh B. Battula, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -118,17 +119,7 @@ const AndroidProgramming = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>EXPERTS/SPEAKERS -</strong> TBA
             </p>
           </div>
 
@@ -146,124 +137,182 @@ const AndroidProgramming = () => {
               <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
                 {/* Column layout adjusted for better mobile viewing */}
                 <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
+                  <ul className="list-[square] space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
+                      <strong>MOBILE APP DEVELOPMENT INTRODUCTION</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          <strong>Chapter 1:</strong> JAVA Concepts - OOPs
+                          Concepts, Inheritance in detail, Exception handling,
+                          Packages & interfaces, JVM & .jar file extension,
+                          Multi-threading (Thread class & Runnable Interface)
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 2:</strong> SQL - DML & DDL Queries in
+                          brief
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 3:</strong> Introduction to Android -
+                          Setting up development environment, Dalvik Virtual
+                          Machine & .apk file extension, Fundamentals (Basic
+                          Building blocks - Activities, Services, Broadcast
+                          Receivers & Content providers, UI Components - Views &
+                          notifications, Components for communication - Intents
+                          & Intent Filters), Android API levels (versions &
+                          version names)
+                        </li>
+                      </ul>
                     </li>
+
                     <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
+                      <strong>ANDROID SOFTWARE DEVELOPMENT KIT (SDK)</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          <strong>Chapter 4:</strong> Application Structure -
+                          AndroidManifest.xml, Uses-permission & uses-sdk,
+                          Resources & R.java, Assets, Layouts & Drawable
+                          Resources, Activities and Activity lifecycle, First
+                          sample Application Course
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 5:</strong> Emulator-Android Virtual
+                          Device - Launching emulator, Debugging in Android
+                          Application, Logcat usage, Introduction to DDMS, Hello
+                          World App, Creating your first project (The manifest
+                          file, Layout resource, Running your app on Emulator),
+                          Second App (switching between activities), Develop an
+                          app for demonstrating the communication between
+                          Intents
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
                 <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
+                  <ul className="list-[square] space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
+                      <strong>INTERFACE USABILITY</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          <strong>Chapter 6:</strong> Basic UI design - Form
+                          widgets, Text Fields, Layouts, [dip, dp, sip, sp]
+                          versus px, Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 7:</strong> Preferences - Shared
+                          Preferences, Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 8:</strong> Menu - Option menu,
+                          Context menu, Sub menu, Menu from xml, Menu via code,
+                          Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 9:</strong> Intents (in detail) -
+                          Explicit Intents, Implicit intents, Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 10:</strong> UI design - Time and
+                          Date, Images and media, Composite, Alert Dialogs &
+                          Toast, Popup, Examples
+                        </li>
+                      </ul>
                     </li>
+
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
+                      <strong>ANDROID APPLICATION DEVELOPMENT</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          <strong>Chapter 11:</strong> Styles & Themes -
+                          styles.xml, Drawable resources for shapes, gradients
+                          (selectors), Style attribute in layout file, Applying
+                          themes via code and manifest file, Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 12:</strong> Linkify - Web URLs, Email
+                          address, text, map address, phone, Open Web Browser
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 13:</strong> Adapters and Widgets -
+                          Adapters (ArrayAdapters, BaseAdapters, Recycler View),
+                          Gallery using adapters
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 14:</strong> Content Providers -
+                          SQLite Programming, SQLiteOpenHelper, SQLiteDatabase -
+                          Getting Data from Database
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
+                <div className="px-4">
+                  <ul className="list-[square] space-y-4 text-sm">
+                    <li className="break-words">
+                      <strong>ANDROID APPLICATION DEPLOYMENT</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          <strong>Chapter 15:</strong> Toast
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 16:</strong> Camera - Taking pictures,
+                          Media Recorder, Rendering previews
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 17:</strong> Threads - Threads running
+                          on UI thread (runOnUiThread), Worker thread, Handlers
+                          & Runnable, AsyncTask (in detail), Examples
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 18:</strong> Services - Overview of
+                          services in Android, Implementing a Service, Service
+                          lifecycle
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 19:</strong> Multimedia in Android -
+                          Simple video playback
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 20:</strong> Location Based Services
+                          and Google Maps - Using Location Based Services,
+                          Finding current location and listening for changes in
+                          location, Working with Google Maps, Showing google map
+                          in an Activity
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 21:</strong> Sensors - How Sensors
+                          work, Using Orientation and Accelerometer sensors,
+                          Best practices for performance
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 22:</strong> Telephony Services -
+                          Making calls, Sending messages
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 23:</strong> Android Application
+                          Deployment on Android Market
+                        </li>
+                        <li className="break-words">
+                          <strong>Chapter 24:</strong> Json Parsing in
+                          Application
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="px-4 sm:px-8 sm:py-2 bg-[#FFE81C]">
+                <ul className="list-[square] space-y-4 text-sm">
+                  <li className="break-words">
+                    <strong>Extra Points for Discussion</strong>
+                    <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                      <li className="break-words">
+                        Adding Advertisement (Admob) in Android App for making
+                        money through App
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
