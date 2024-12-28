@@ -24,8 +24,8 @@ const NumericalEngineeringComputations = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Numerical & engineering computation, optimization for Physicists,
+              Scientists & Engineers using open-source- SCILAB
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +35,7 @@ const NumericalEngineeringComputations = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/QqaWsc9K6CE3W2Tj6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +54,7 @@ const NumericalEngineeringComputations = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +62,10 @@ const NumericalEngineeringComputations = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
                 <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. Menka Yadav, MNIT Jaipur</li>
+                <li className="ml-4">Prof. Sanjeev Manhas</li>
+                <li className="ml-4">Dr. Kuldeep Singh, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -148,79 +145,24 @@ const NumericalEngineeringComputations = () => {
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
+                      <strong>Solving set of equations -</strong>
+                      Perform computations like matrix, vectors; Gaussian
+                      elimination & iterative methods, ill-conditioned systems,
+                      iterative methods; nonlinear equations
+                    </li>
+                    <li className="break-words">
                       <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
+                        Large Matrix Analysis and Large Eigenvalue Problem-
                       </strong>
+                      Eigenvalues & Eigenvectors, Gerschgorin Theorem, Iterative
+                      Method, Sturm Sequence, QR Method, Singular Value Problems
                     </li>
                     <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
+                      <strong>Random Numbers</strong> Simulation & Applications
                     </li>
                     <li className="break-words">
                       <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
+                        Open-source & Traditional Technical Computing
                       </strong>
                     </li>
                   </ul>
@@ -228,39 +170,44 @@ const NumericalEngineeringComputations = () => {
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
+                      Solving Ordinary Differential Equations (ODE); Plotting 2D
+                      and 3D Plots; Diagram Creation
                     </li>
+                    <li className="break-words">
+                      <strong>Xcos -</strong> Model-based Simulations Using Xcos
+                    </li>
+                    <li className="break-words">
+                      Introduction to Discrete Probabilities with Scilab
+                    </li>
+                    <li className="break-words">
+                      Introduction to Constrained and Unconstrained
+                      Optimization; Optimality Conditions
+                    </li>
+                    <li className="break-words">
+                      Writing Functions in Scilab and Scripting
+                    </li>
+                    <li className="break-words">Building an Interactive GUI</li>
+                  </ul>
+                </div>
+                <div className="px-4">
+                  <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
                       <strong>
-                        Machine Learning in Edge/Fog Computing Networks
+                        Linear Algebraic Equations, Fast Computation,
                       </strong>
+                      Pade & Rational Approximation
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
+                      <strong>Numerical Approximations</strong> of Functions -
+                      Taylor&#39;s Polynomial, Least-square Approximation, Chebyshev
+                      Series/Polynomial, Splines
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
+                      Fourier Coefficients, Fourier Series, Trigonometric
+                      Interpolation, DFT, FFT; Compression
                     </li>
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
+                      Application Development; Industry Real-time Use Cases
                     </li>
                   </ul>
                 </div>

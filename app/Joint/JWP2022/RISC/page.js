@@ -24,8 +24,7 @@ const RISC = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              RISC-V VLSI Implementation Flow: RTL2GDS
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const RISC = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/7uYTCMpTmvFe14n4A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const RISC = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Gaurav Trivedi, IIT Guwahati</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +61,9 @@ const RISC = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. Pankaj Kumar, NIT Patna</li>
+                <li className="ml-4">Dr. Sangeeta Singh, NIT Patna</li>
+                <li className="ml-4">Dr. C. Periasamy, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -118,17 +113,11 @@ const RISC = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>EXPERTS/SPEAKERS -</strong> Prof. M. Balakrishnan, Prof.
+              Anshul Kumar, IIT Delhi, Prof. Preeti Ranjan Panda, IIT Delhi;
+              Prof. V. Kamakoti, IITM (consent awaited); Mr. Gaurav Jalan,
+              Founder SpicaWorks, Bengaluru Open source-based design flow talks
+              are all industry speaker-driven.
             </p>
           </div>
 
@@ -149,78 +138,42 @@ const RISC = () => {
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
                       <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
+                        Transistor to Processor Level Simulation and
+                        Verification
                       </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
                     </li>
                     <li className="break-words">
                       <strong>
-                        Feature Selection and Dimensionality Reduction
+                        Digital Blocks constituting RISCV Processor
                       </strong>
                     </li>
                     <li className="break-words">
-                      <strong>Clustering</strong>
+                      <strong>Digital Design to Processor ISA</strong>
                     </li>
                     <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
+                      <strong>RISCV Instruction Set Architecture</strong>
                     </li>
                     <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
+                      <strong>ISA Simulators</strong>
                     </li>
                   </ul>
                 </div>
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
+                      <strong>Simulation and Verification of RISCV ISA</strong>
+                    </li>
+                    <li className="break-words">
+                      <strong>RISCV Processor Design from Ground Up</strong>
                     </li>
                     <li className="break-words">
                       <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
+                        Visualization of Processor blocks via Synthesis
                       </strong>
                     </li>
                     <li className="break-words">
                       <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
+                        Overview of RTL2GDS flow in processor design
                       </strong>
                     </li>
                   </ul>
@@ -229,42 +182,25 @@ const RISC = () => {
                   <ul className="list-disc space-y-4 text-sm">
                     <li className="break-words">
                       <strong>
-                        Machine Learning in the Internet of Things
+                        Tapeout SignOff for Processor: What does it mean?
                       </strong>
                     </li>
                     <li className="break-words">
                       <strong>
-                        Machine Learning in Edge/Fog Computing Networks
+                        Power Performance Area Tradeoffs in RISCV Processor
+                        Design
                       </strong>
                     </li>
                     <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
+                      <strong>RISC V Job Market</strong>
                     </li>
                   </ul>
                 </div>
               </div>
+              <p className="mb-1 p-2 sm:p-4 text-sm sm:text-base">
+                All Modules will be covered using hands-on tutorials of RISC-V
+                implementation in open source tool flow.
+              </p>
             </div>
           </div>
 

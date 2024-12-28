@@ -144,7 +144,7 @@ const BlockchainTechnology = () => {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="bg-[#FFE81C]">
+                  <tbody className="bg-[#FFE81C] text-base">
                     {[
                       "Introduction to Blockchain, Blockchain Evolution, Bitcoin Blockchain",
                       "Consensus Mechanisms, Proof of Work, Ethereum, Forks in Blockchain",

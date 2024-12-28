@@ -131,7 +131,7 @@ const WinterCoursesPage = () => {
     {
       id: 13,
       name: "Designing With FPGAs (Intel)",
-      BrochureLink: "FPGA",
+      BrochureLink: "",
       pdfLink: "",
       date: "14 Mar - 19 Mar 2022",
       coordinator: "Dr. Sangeeta Singh and Dr. Meena Panchore",
@@ -140,7 +140,7 @@ const WinterCoursesPage = () => {
     {
       id: 14,
       name: "AI & Machine Learning for IoT/EDA",
-      BrochureLink: "AIML",
+      BrochureLink: "",
       pdfLink: "./Brochure/22.01.20-AI & ML for IoT EDA.pdf",
       date: "7 Mar - 19 Mar 2022",
       coordinator: "Dr. Bharat Gupta & Dr. Bal Chand Nagar",
@@ -213,18 +213,22 @@ const WinterCoursesPage = () => {
                     </td>
                     <td className="px-6 py-4">
                       <span className="text-sm font-medium">
-                        <Link href={`JWP2022/${course.BrochureLink}`}>
-                          {course.name}
-                        </Link>
+                        {course.BrochureLink ? (
+                          <Link href={`JWP2022/${course.BrochureLink}`}>
+                            {course.name}
+                          </Link>
+                        ) : (
+                          `${course.name}`
+                        )}
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       {course.pdfLink ? (
                         <Link href={course.pdfLink}>View Details</Link>
+                      ) : course.BrochureLink ? (
+                        <Link href={course.BrochureLink}>View Details</Link>
                       ) : (
-                        <Link href={`JWP2022/${course.BrochureLink}`}>
-                          View Details
-                        </Link>
+                        "View Details"
                       )}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">

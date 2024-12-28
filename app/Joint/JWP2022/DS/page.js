@@ -24,8 +24,7 @@ const DataScience = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Data Science for All
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const DataScience = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/9Xcj8uStDo64r8Ry6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -55,7 +54,7 @@ const DataScience = () => {
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
                 <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
+                  Prof. R. B. V. Subramanyam, NIT Warangal
                 </li>
               </ul>
             </div>
@@ -64,11 +63,11 @@ const DataScience = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Prof. M. P. Singh, NIT Patna</li>
+                <li className="ml-4">Dr. Atul Gupta, IIITDM Jabalpur</li>
+                <li className="ml-4">Prof. Amey Karkare, IIT Kanpur,</li>
+                <li className="ml-4">Prof. Sanjeev Manhas, IIT Roorkee</li>
+                <li className="ml-4">Dr. Arka Prokash Mazumdar, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -118,17 +117,10 @@ const DataScience = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>EXPERTS/SPEAKERS -</strong> Prof Amey Karkare IITK, Prof
+              DVLN Somayajulu-IIITDMK, Prof RBV Subramnayam NIT-W, Dr Atul Gupta
+              IIITDMJ, Dr T Ramakrishnudu NIT-W, Dr Nagesh Bhattu – NIT AP, Dr
+              Anand Kumar- NIT K Surathkal, Industry speakers.
             </p>
           </div>
 
@@ -146,121 +138,91 @@ const DataScience = () => {
               <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
                 {/* Column layout adjusted for better mobile viewing */}
                 <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
+                  <ul className="list-[square] space-y-4 text-sm">
                     <li className="break-words">
                       <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
+                        Mathematical Foundations of Data Sciences:
                       </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
+                      <ul className="list-[disc] space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">Matrices</li>
+                        <li className="break-words">Vectors</li>
+                        <li className="break-words">Vector Spaces</li>
+                        <li className="break-words">Matrix Decomposition</li>
+                        <li className="break-words">
+                          Singular Value Decomposition
+                        </li>
+                        <li className="break-words">Statistical Measures</li>
+                        <li className="break-words">Probability Basics</li>
+                        <li className="break-words">Density Function</li>
+                        <li className="break-words">Variance</li>
+                        <li className="break-words">Conditional Probability</li>
+                        <li className="break-words">Markov Chains</li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
                 <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
+                  <ul className="list-[square] space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
+                      <strong>Data Processing:</strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">
+                          Dimensionality Reduction,
+                        </li>
+                        <li className="break-words">
+                          Principal Component Analysis.
+                        </li>
+                      </ul>
                     </li>
+
                     <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
+                      <strong>Machine Learning basics: </strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">Regression</li>
+                        <li className="break-words">
+                          Classification – Decision Trees
+                        </li>
+                        <li className="break-words">
+                          Naïve Bayesian Classifier
+                        </li>
+                        <li className="break-words">Clustering</li>
+                        <li className="break-words">
+                          Handling Large Datasets: MapReduce
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
                 <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
+                  <ul className="list-[square] space-y-4 text-sm">
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
+                      <strong>R for Data Science: </strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">Data Wrangling</li>
+                        <li className="break-words">Data Visualization</li>
+                        <li className="break-words">Programming</li>
+                      </ul>
                     </li>
+
                     <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
+                      <strong>Python for Data Science: </strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">Normal Python</li>
+                        <li className="break-words">NumPy</li>
+                        <li className="break-words">Pandas</li>
+                        <li className="break-words">Matplotlib</li>
+                      </ul>
                     </li>
+
                     <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
+                      <strong>Deep Learning </strong>
                     </li>
+
                     <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
+                      <strong>Scikit, Keras and TensorFlow: </strong>
+                      <ul className="list-disc space-y-4 text-sm px-4 py-2">
+                        <li className="break-words">Practice on ML topics</li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
