@@ -1,6 +1,6 @@
 import React from "react";
 
-const OpenPower = () => {
+const Python = () => {
   return (
     <>
       <style>
@@ -24,7 +24,7 @@ const OpenPower = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              OpenPower RISC architecture Design (enabled by Industry IBM)
+              Quantum Computing
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -34,7 +34,7 @@ const OpenPower = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/tocoszZ1cFsWB2tc6"
+                href="https://forms.gle/WT3Wb4DrNpcm4PB49"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -53,19 +53,22 @@ const OpenPower = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Gaurav Trivedi, IIT Guwahati</li>
+                <li className="ml-4">
+                  Dr. Pilli Emmanuel Shubhakar, MNIT Jaipur
+                </li>
               </ul>
             </div>
             <div className="space-y-2">
               <p className="font-bold text-sm sm:text-base">
-                Co-Principal Coordinator :
+                Joint-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Sangeeta Singh, NIT Patna</li>
-                <li className="ml-4">Mr. Pankaj Kumar, NIT Patna</li>
-                <li className="ml-4">Prof. Sanjeev Manhas, IIT Roorkee</li>
-                <li className="ml-4">Dr. Manish Bajpai</li>
-                <li className="ml-4">Prof. Vineet Sahula, MNIT Jaipur</li>
+                <li className="ml-4">Dr. J P Singh, NIT Patna</li>
+                <li className="ml-4">Dr. M P Singh, NIT Patna</li>
+                <li className="ml-4">Prof. Kanupriya Sachdev, MNIT Jaipur</li>
+                <li className="ml-4">
+                  Prof. Kusum Kumari Bharati , IIITDM Jabalpur
+                </li>
               </ul>
             </div>
           </div>
@@ -112,9 +115,12 @@ const OpenPower = () => {
           {/* Resource Persons - Responsive text */}
           <div className="text-center mb-6 px-2">
             <h2 className="text-lg sm:text-xl font-bold font-['Quicksand'] mb-3 sm:mb-4">
-              Speakers:
+              Speakers (tentative):
             </h2>
-            <p className="text-sm sm:text-base">Experts from IBM</p>
+            <p className="text-sm sm:text-base">
+              Industry- Microsoft Inc. – experts from Microsoft Garage- Azure
+              Quantum
+            </p>
           </div>
 
           <hr className="border-gray-400 my-4" />
@@ -139,31 +145,24 @@ const OpenPower = () => {
                   </thead>
                   <tbody className="bg-[#FFE81C] text-base">
                     {[
-                      "Processor data path design",
-                      "Control design - Hardwired control",
-                      "Arithmetic circuit design",
-                      "Data path & control pipelining",
-                      "RISC superscalar architectures",
-                      "Parallelism and systolic arrays",
-                      "Simulations and Characterization for Libraries",
-                      "Design Basics: Circuit, Architecture and System Level",
-                      "Constraints and Synthesis: Input Output Constraints, Complex SoC Constraints; Input Output Files: Lib Files, General files needed in complete flow",
-                      "Layer and Power Planning",
-                      "Floorplanning",
-                      "Delay Calculations and System Implications",
-                      "Setup and Hold Discussion Placement Basics and Settings",
-                      "DRC LVS and Extraction",
-                      "Low Power Flow Basics",
-                      "Sign Off",
+                      "Quantum Measurements Density Matrices; Positive-Operator Valued Measure; Fragility of quantum information: Decoherence",
+                      "Quantum Superposition and Entanglement; Quantum Gates and Circuits; No cloning theorem & Quantum Teleportation; Bell’s inequality and its implications",
+                      "Quantum Algorithms & Circuits; Deutsch and Deutsch–Jozsa algorithms; Grover’s Search Algorithm; Quantum Fourier Transform",
+                      "Shore’s Factorization Algorithm; Quantum Error Correction: Fault tolerance; Quantum Cryptography; Implementing Quantum Computing: issues of fidelity",
+                      "Scalability in quantum computing; NMR Quantum Computing; Spintronics and QED approaches",
+                      "Linear Optical Approaches; Nonlinear Optical Approaches; Limits of the approaches; Future scope",
                     ].map((topic, index) => (
                       <tr
                         key={index}
                         className={
-                          index % 2 === 0 ? "bg-[#FFE81C]" : "bg-[#FFF067]"
+                          index % 2 === 0 ? "bg-[#FFF067]" : "bg-[#FFE81C]"
                         }
                       >
                         <td className="p-4 align-top">{index + 1}</td>
-                        <td className="p-4">{topic}</td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: topic }}
+                        ></td>
                       </tr>
                     ))}
                   </tbody>
@@ -239,4 +238,4 @@ const OpenPower = () => {
   );
 };
 
-export default OpenPower;
+export default Python;
