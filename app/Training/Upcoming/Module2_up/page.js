@@ -190,7 +190,7 @@ const Module2_up = () => {
   <li><strong>Lab 7:</strong> AVL tree, Red and Black Tree, B-Tree.</li>
   <li><strong>Lab 8:</strong> Balanced search trees as heap, Fibonacci heap, heap sort.</li>
   <li><strong>Lab 9:</strong> Graph Traversal Algorithm: (i) Breadth First Search (BFS), (ii) Depth First Search (DFS).</li>
-  <li><strong>Lab 10:</strong> Greedy method: Minimum Cost Spanning Tree by (i) Prim's Algorithm, and (ii) Kruskal's Algorithm.</li>
+  <li><strong>Lab 10:</strong> Greedy method: Minimum Cost Spanning Tree by (i) Prim&#39;s Algorithm, and (ii) Kruskal&#39;s Algorithm.</li>
 </ul>
 
         </div>
