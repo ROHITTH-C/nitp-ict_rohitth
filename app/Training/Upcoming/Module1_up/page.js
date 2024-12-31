@@ -7,7 +7,7 @@ const Module1_up = () => {
       Module 1
       </div>
       <br />
-      <div className="max-w-6xl mx-auto px-4 py-6 text-[#333333]">
+      <div className="max-w-6xl mx-auto px-4 py-6 text-[#000000]">
         <div className="text-base space-y-6">
           <p className="text-[24px]">
           Starting from 22.09.2015
