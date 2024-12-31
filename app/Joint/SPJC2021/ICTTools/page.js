@@ -199,7 +199,7 @@ const ICTTools = () => {
                       "MooC: Use of MooC for content management, class organization, assessment; MooC’s deployment and use; Building Course Website and Google Suite",
                       "Teaching Learning Tools & e-content generation: Using tools for teaching and learning - interactive whiteboards/smart screens, video conferencing, digital content creation, design of instructional material & presentation",
                       "Content Dissemination: Management, Version Control; ICT tools for English language teaching and learning; Illustration tools and author aids - Visio",
-                      "Computer Based Training (CBT): CBT for letters generation, certificate preparation, report writing, presentation and posters preparation, spreadsheets & evaluation, research resources & bibliography management",
+                      "Computer Based Training (CBT): CBT for letters generation, certificate preparation, report writing, presentation and posters preparation, spreadsheets & evaluation, research resources & bibliography management, etc.",
                     ].map((topic, index) => (
                       <tr
                         key={index}
