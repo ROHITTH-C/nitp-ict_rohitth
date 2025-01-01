@@ -115,17 +115,10 @@ const NumericalEngineeringComputations = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>EXPERTS/SPEAKERS -</strong> From IITs/NITs/IIITs and
+              industry, research organizations- (i) Prof. Kannan Moudgalya, IITB
+              (consent awaited), (ii) Chaitanya Kancharla, ESI-SCILAB; (iii)
+              Experts from INRIA/SCILAB (CONSENT Awaited)
             </p>
           </div>
 
@@ -199,8 +192,8 @@ const NumericalEngineeringComputations = () => {
                     </li>
                     <li className="break-words">
                       <strong>Numerical Approximations</strong> of Functions -
-                      Taylor&#39;s Polynomial, Least-square Approximation, Chebyshev
-                      Series/Polynomial, Splines
+                      Taylor&#39;s Polynomial, Least-square Approximation,
+                      Chebyshev Series/Polynomial, Splines
                     </li>
                     <li className="break-words">
                       Fourier Coefficients, Fourier Series, Trigonometric

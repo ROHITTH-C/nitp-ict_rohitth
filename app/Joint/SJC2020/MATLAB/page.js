@@ -140,13 +140,13 @@ const Matlab = () => {
               Payment Details:
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
-              <p>Bank Name: Allahabad Bank (Merge to Indian Bank)</p>
+              <p>Bank Name: Allahabad Bank</p>
               <p>Account Name: NIT Patna</p>
               <p>
                 <strong>Account No.: 50380476798</strong>
               </p>
               <p>
-                <strong>IFSC Code: IDIB000B810</strong>
+                <strong>IFSC Code: ALLA0212286</strong>
               </p>
             </div>
           </div>
@@ -281,7 +281,7 @@ const Matlab = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}
@@ -304,6 +304,9 @@ const Matlab = () => {
             <p className="font-bold font-['Quicksand'] mb-2 text-sm sm:text-base">
               Contact us :
             </p>
+            <h1>
+              <strong>Mr. Ram Gopal (TPO) : 8434305807</strong>
+            </h1>
             <div className="space-y-1 text-sm sm:text-base">
               <p>Electronics and ICT Academy</p>
               <p>National Institute of Technology, Patna</p>

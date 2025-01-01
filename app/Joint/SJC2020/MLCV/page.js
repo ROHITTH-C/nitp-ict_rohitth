@@ -145,13 +145,13 @@ const MLComputerVision = () => {
               Payment Details:
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
-              <p>Bank Name: Allahabad Bank (Merge to Indian Bank)</p>
+              <p>Bank Name: Allahabad Bank</p>
               <p>Account Name: NIT Patna</p>
               <p>
                 <strong>Account No.: 50380476798</strong>
               </p>
               <p>
-                <strong>IFSC Code: IDIB000B810</strong>
+                <strong>IFSC Code: ALLA0212286</strong>
               </p>
             </div>
           </div>
@@ -264,7 +264,7 @@ const MLComputerVision = () => {
             <div className="space-y-4 text-sm sm:text-base">
               <div>
                 <p className="font-bold">
-                  Dr. Bharat Gupta (CI E & ICT Academy, NIT Patna)
+                  Dr. Bharat Gupta
                 </p>
                 <p>
                   Email:{" "}
@@ -278,7 +278,7 @@ const MLComputerVision = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh
                 </p>
                 <p>
                   Email:{" "}
@@ -296,25 +296,6 @@ const MLComputerVision = () => {
             </div>
           </div>
 
-          {/* Contact Information - Responsive spacing */}
-          <div className="text-center px-2">
-            <p className="font-bold font-['Quicksand'] mb-2 text-sm sm:text-base">
-              Contact us :
-            </p>
-            <div className="space-y-1 text-sm sm:text-base">
-              <p>Electronics and ICT Academy</p>
-              <p>National Institute of Technology, Patna</p>
-              <p>AshokRajpath, Patna 800005</p>
-              <p>
-                <span className="font-bold font-['Quicksand']">Email:</span>{" "}
-                eictapatna@nitp.ac.in
-              </p>
-              <p>
-                <span className="font-bold font-['Quicksand']">Website:</span>{" "}
-                http://old.nitp.ac.in/ict
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </>
