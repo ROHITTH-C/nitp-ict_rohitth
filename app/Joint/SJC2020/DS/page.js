@@ -122,13 +122,13 @@ const DataScience = () => {
               Payment Details:
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
-              <p>Bank Name: Allahabad Bank (Merge to Indian Bank)</p>
+              <p>Bank Name: Allahabad Bank</p>
               <p>Account Name: NIT Patna</p>
               <p>
                 <strong>Account No.: 50380476798</strong>
               </p>
               <p>
-                <strong>IFSC Code: IDIB000B810</strong>
+                <strong>IFSC Code: ALLA0212286</strong>
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ const DataScience = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}

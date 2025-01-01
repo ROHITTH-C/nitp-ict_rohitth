@@ -208,7 +208,7 @@ const DesigningWithFPGA = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}

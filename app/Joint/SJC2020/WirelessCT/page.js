@@ -129,12 +129,12 @@ const WirelessCT = () => {
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
               <p>
-                Faculty/ PhD Scholar :
-                <strong> Rs.500/-(SC/ST = Rs. 250/- )</strong>
+                Academic (student/faculty):
+                <strong> 500 INR (GEN/OBC) / 250 INR (SC/ST)</strong>
               </p>
               <p>
-                Others (Except Faculty/PhD-Scholar):
-                <strong> Rs. 1000/- (SC/ST = Rs. 500/- )</strong>
+                Industry People/Others
+                <strong> 1000 INR/ 500INR (SC/ST)</strong>
               </p>
             </div>
           </div>
@@ -145,13 +145,13 @@ const WirelessCT = () => {
               Payment Details:
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
-              <p>Bank Name: Allahabad Bank (Merge to Indian Bank)</p>
+              <p>Bank Name: Allahabad Bank</p>
               <p>Account Name: NIT Patna</p>
               <p>
                 <strong>Account No.: 50380476798</strong>
               </p>
               <p>
-                <strong>IFSC Code: IDIB000B810</strong>
+                <strong>IFSC Code: ALLA0212286</strong>
               </p>
             </div>
           </div>

@@ -118,7 +118,7 @@ const NaturalLanguageProcessing = () => {
               <strong>EXPERTS/SPEAKERS -</strong> Prof. Pushpak Bhattacharya,
               IIT Bombay (ii) Dr. Asif Ekbal, IITP (iii) Dr. Sriparna Saha,
               IITP; (iv) Dr. Atul Gupta, IIITDMJ (v) Dr. J. P. Singh, NITP (vi)
-              Dr.Namita Mittal,
+              Dr.Namita Mittal, MNITJ,
             </p>
           </div>
 
