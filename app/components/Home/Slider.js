@@ -26,7 +26,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden">
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden h-[380px] z-0">
       {/* Slider Content */}
       <div
         className="flex transition-transform duration-500"
@@ -40,7 +40,7 @@ const Slider = () => {
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              className="w-full h-64 object-cover"
+              className="w-full h-80 object-cover"
             />
           </div>
         ))}

@@ -237,38 +237,42 @@ export default function Navbar() {
         </div>
   
 
-      <div className={`mobiletest navbar-container  ${isSticky ? "sticky-nav md:py-0 stickdiv" : ""}`}>
-      <div className="flex justify-between items-center bg-white px-4 py-4">
+      <div>
+      <div className="flex justify-around items-center bg-white px-4 py-4 w-full">
         <div className="flex items-center">
           {/* Government Logo */}
           <img
             src="/satya.png"
             alt="Government Logo"
-            className="h-16 ml-40"
+            className="h-16 "
           />
-          <div className="ml-40">
-            <h1 className="text-lg font-bold">
-              ELECTRONICS AND ICT ACADEMY AT NATIONAL INSTITUTE OF TECHNOLOGY PATNA
-            </h1>
-            <p className="text-sm ml-20">
-              Setup Under Scheme of Department of Electronics and Information Technology
-            </p>
-            <p className="text-sm ml-32">
-              Ministry of Communications and IT, Govt. of India
-            </p>
-          </div>
-        </div>
+           </div>
+           <div className="flex flex-col items-center justify-center text-sm p-4 md:p-8">
+  <h1 className="sm:text-2xl font-bold text-center text-xs sm:font-semibold">
+    ELECTRONICS AND ICT ACADEMY AT NATIONAL INSTITUTE OF TECHNOLOGY PATNA
+  </h1>
+  <p className="sm:text-xl text-center text-[10px] mt-2">
+    Setup Under Scheme of Department of Electronics and Information Technology
+  </p>
+  <p className="sm:text-xl text-center text-[10px] mt-1">
+    Ministry of Communications and IT, Govt. of India
+  </p>
+</div>
+
+
+
+       
         {/* NIT Patna Logo */}
         <img
           src="/logo.png"
           alt="NIT Patna Logo"
-          className="h-16 mr-48"
+          className="h-16 "
         />
       </div>
 
         
 
-      <div className="desktopnav  flex w-full  justify-center px-4 py-3 text-sm  md:py-1 md:bg-blue-500 backdrop-blur-lg  shadow-lg">
+      <div className="desktopnav  flex w-full  justify-center px-4 py-3 text-sm  md:py-1 md:bg-blue-500 backdrop-blur-lg  shadow-lg z-10">
 
           <section className="nav-items hidden md:flex ">
 

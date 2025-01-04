@@ -1,29 +1,17 @@
 export default function Announce() {
     const announcements = [
       {
-        title: "Electrical Vehicle and Energy Storage Systems: Recent Trends and Future Prospects",
-        date: "27-31 Jan 2025",
+        title: "Online FDP under the banner of EICT NIT Patna titled as 'Advances in Robotics and Machine Learning'",
+        date: "10-02-2025 to 14-02-2025",
       },
       {
-        title: "Current challenges in cyber security with blockchain and IDS in IoT domain",
-        date: "20-24 Jan 2025",
-      },
-      {
-        title: "Nanotechnology for VLSI: Fabrication and Challenges",
-        date: "3-7 Feb 2025",
-      },
-      {
-        title: "Future Trends in AI and Machine Learning",
-        date: "15-19 Mar 2025",
-      },
-      {
-        title: "Advancements in Quantum Computing",
-        date: "10-14 Apr 2025",
+        title: "FDP on “Quantum Communication and AI/ML”",
+        date: "7th – 11th March, 2025",
       },
     ];
   
     return (
-      <div className="max-w-lg mx-auto bg-gradient-to-b from-blue-100 to-blue-300 p-4 shadow-lg rounded-md">
+      <div className="max-w-lg mx-auto bg-gradient-to-b from-blue-100 to-blue-300 p-4 shadow-lg rounded-md ">
         <h2 className="text-xl font-bold text-black mb-4 border-b-2 border-black">
           Current Courses
         </h2>
