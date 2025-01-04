@@ -1,7 +1,7 @@
 import Slider from "./components/Home/Slider";
 import Announcement from './components/Home/Announcement';
 import Main from './components/Home/page';
-import Gallery from "./components/Home/Gallery";
+// import Gallery from "./components/Home/Gallery";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

@@ -48,7 +48,7 @@ const navItems = [
       },
       {
         label: "Responsibility",
-        link: "/Rsp",
+        link: "#",
 
         children: [
           {
@@ -106,7 +106,7 @@ const navItems = [
     children: [
       {
         label: "Upcoming",
-        link: "/Training/Upcoming",
+        link: "#",
 
         children: [
           {
@@ -124,7 +124,7 @@ const navItems = [
       },
       {
         label: "Proposed",
-        link: "/Training/Proposed",
+        link: "#",
 
         children: [
           {
@@ -222,57 +222,57 @@ export default function Navbar() {
   return (
     <>
       <div className="bg-blue-700 text-white">
-          
-          <div className="flex justify-end items-center px-4 py-2 text-sm">
-            <a href="#" className="ml-4 hover:underline">
-              Contact Us
-            </a>
-            <a href="https://www.nitp.ac.in/" className="ml-4 hover:underline">
-              Go To NITP Site
-            </a>
-            <a href="#" className="ml-4 hover:underline">
-              Go To Deity
-            </a>
-          </div>
+
+        <div className="flex justify-end items-center px-4 py-2 text-sm">
+          <a href="#" className="ml-4 hover:underline">
+            Contact Us
+          </a>
+          <a href="https://www.nitp.ac.in/" className="ml-4 hover:underline">
+            Go To NITP Site
+          </a>
+          <a href="#" className="ml-4 hover:underline">
+            Go To Deity
+          </a>
         </div>
-  
-
-      <div>
-      <div className="flex justify-around items-center bg-white px-4 py-4 w-full">
-        <div className="flex items-center">
-          {/* Government Logo */}
-          <img
-            src="/satya.png"
-            alt="Government Logo"
-            className="h-16 "
-          />
-           </div>
-           <div className="flex flex-col items-center justify-center text-sm p-4 md:p-8">
-  <h1 className="sm:text-2xl font-bold text-center text-xs sm:font-semibold">
-    ELECTRONICS AND ICT ACADEMY AT NATIONAL INSTITUTE OF TECHNOLOGY PATNA
-  </h1>
-  <p className="sm:text-xl text-center text-[10px] mt-2">
-    Setup Under Scheme of Department of Electronics and Information Technology
-  </p>
-  <p className="sm:text-xl text-center text-[10px] mt-1">
-    Ministry of Communications and IT, Govt. of India
-  </p>
-</div>
-
-
-
-       
-        {/* NIT Patna Logo */}
-        <img
-          src="/logo.png"
-          alt="NIT Patna Logo"
-          className="h-16 "
-        />
       </div>
 
-        
 
-      <div className="desktopnav  flex w-full  justify-center px-4 py-3 text-sm  md:py-1 md:bg-blue-500 backdrop-blur-lg  shadow-lg z-10">
+      <div>
+        <div className="flex justify-around items-center bg-white px-4 py-4 w-full">
+          <div className="flex items-center">
+            {/* Government Logo */}
+            <img
+              src="/satya.png"
+              alt="Government Logo"
+              className="h-16 "
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center text-sm p-4 md:p-8">
+            <h1 className="sm:text-2xl font-bold text-center text-xs sm:font-semibold">
+              ELECTRONICS AND ICT ACADEMY AT NATIONAL INSTITUTE OF TECHNOLOGY PATNA
+            </h1>
+            <p className="sm:text-xl text-center text-[10px] mt-2">
+              Setup Under Scheme of Department of Electronics and Information Technology
+            </p>
+            <p className="sm:text-xl text-center text-[10px] mt-1">
+              Ministry of Communications and IT, Govt. of India
+            </p>
+          </div>
+
+
+
+
+          {/* NIT Patna Logo */}
+          <img
+            src="/logo.png"
+            alt="NIT Patna Logo"
+            className="h-16 "
+          />
+        </div>
+
+
+
+        <div className="desktopnav  flex w-full   justify-center px-4 py-3 text-sm  md:py-1 md:bg-blue-500 backdrop-blur-lg  shadow-lg z-10">
 
           <section className="nav-items hidden md:flex ">
 
@@ -298,7 +298,7 @@ function NavItem({ item }) {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      
+
       <Link href={item.link ?? "#"} className="flex cursor-pointer items-center gap-2 px-10 py-3 text-white transition-all group-hover:text-blue-800">
         <span>{item.label}</span>
         {item.children && <IoIosArrowDown className={`transition-all ${isOpen ? "rotate-180" : ""}`} />}
@@ -306,9 +306,9 @@ function NavItem({ item }) {
       {item.children && (
         <div className={`absolute right-0 top-10 w-auto flex-col gap-1  bg-blue-700  shadow-md transition-all ${isOpen ? "flex" : "hidden"} group`}>
           <div className="border-solid border-2 m-4 p-2 rounded-lg	bg-blue-600 shadow-md">
-          {item.children.map((child, index) => (
-            <DropdownItem key={index} item={child} parentLabel={item.mlabel} />
-          ))}</div>
+            {item.children.map((child, index) => (
+              <DropdownItem key={index} item={child} parentLabel={item.mlabel} />
+            ))}</div>
         </div>
       )}
     </div>
@@ -326,23 +326,23 @@ function DropdownItem({ item, parentLabel }) {
       onMouseEnter={() => setIsSOpen(true)}
       onMouseLeave={() => setIsSOpen(false)}
     >
-      
+
       <Link href={item.link ?? "#"} className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white-800 hover:text-white-100 hover:bg-blue-700">
         {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
         <span className="whitespace-nowrap pl-3">{item.label}</span>
         {item.children && <IoIosArrowDropright className={`ml-auto transition-all ${isSOpen ? "rotate-180" : ""}`} />}
       </Link>
-      
+
       {item.children && (
-        
+
         <div className={`absolute left-full top-0  w-auto flex-col gap-1 rounded-lg shadow-md transition-all  bg-blue-700 md:bg-black-100 ${isSOpen ? "flex" : "hidden"}`}>
           <div className="border-solid border-2 border-blue-800 m-4 p-2 rounded-lg	">
-          {item.children.map((subChild, subIndex) => (
-            <Link key={subIndex} href={subChild.link ?? "#"} className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white md:text-whitr-900 hover:text-white-900 hover:bg-blue-800">
-              {subChild.iconImage && <Image src={subChild.iconImage} alt="item-icon" />}
-              <span className="whitespace-nowrap pl-3">{subChild.label}</span>
-            </Link>
-          ))}</div>
+            {item.children.map((subChild, subIndex) => (
+              <Link key={subIndex} href={subChild.link ?? "#"} className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-white md:text-whitr-900 hover:text-white-900 hover:bg-blue-800">
+                {subChild.iconImage && <Image src={subChild.iconImage} alt="item-icon" />}
+                <span className="whitespace-nowrap pl-3">{subChild.label}</span>
+              </Link>
+            ))}</div>
         </div>
       )}
     </div>
@@ -358,7 +358,7 @@ function MobileNav({ closeSideMenu }) {
         <AiOutlineClose onClick={closeSideMenu} className="mobile-nav-close text-4xl text-black" />
         <div className="flex flex-col text-base gap-2 transition-all ">
           {navItems.map((item, index) => (
-            
+
             <SingleNavItem key={index} item={item} onClick={closeSideMenu} />
           ))}
         </div>
@@ -370,30 +370,30 @@ function MobileNav({ closeSideMenu }) {
 
 
 
-function SingleNavItem({ item ,closeSideMenu}) {
+function SingleNavItem({ item, closeSideMenu }) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItemOpen] = useState(false);
- 
+
   return (
     <div ref={animationParent} className="relative px-1 py-3 transition-all">
       <p onClick={() => setItemOpen(!isItemOpen)} className="flex cursor-pointer items-center gap-2 text-neutral-900 group-hover:text-black">
-      {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
-      <Link href={ "#"} onClick={closeSideMenu} >
-                {item.label}
-              </Link>
+        {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
+        <Link href={"#"} onClick={closeSideMenu} >
+          {item.label}
+        </Link>
         {item.children && <IoIosArrowDown className={`text-xs transition-all ${isItemOpen && "rotate-180"}`} />}
       </p>
       {isItemOpen && item.children && (
         <p className="w-auto flex-col gap-1  bg-neutral-50 py-3 transition-all flex">
           {item.children.map((child, index) => (
-            <SubSidemenu key={index} item={child}/>
+            <SubSidemenu key={index} item={child} />
           ))}
         </p>
       )}
     </div>
   );
 }
-function SubSidemenu({ item,closeSideMenu }) {
+function SubSidemenu({ item, closeSideMenu }) {
   const [isSubItemOpen, setSubItemOpen] = useState(false);
   const [isItemOpen, setItemOpen] = useState(true);
   const handleSubToggle = () => {
@@ -403,10 +403,10 @@ function SubSidemenu({ item,closeSideMenu }) {
   return (
     <div className="relative px-1 py-1 transition-all ">
       <p onClick={handleSubToggle} className="flex cursor-pointer items-center gap-1 text-neutral-700 group-hover:text-black">
-      {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
+        {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
         <Link href={item.link ?? "#"} onClick={closeSideMenu}>
-        <span>{item.label}</span>
-              </Link>
+          <span>{item.label}</span>
+        </Link>
         {item.children && <IoIosArrowDown className={`text-xs transition-all ${isSubItemOpen && "rotate-180"} `} />}
       </p>
       {isSubItemOpen && item.children && (
