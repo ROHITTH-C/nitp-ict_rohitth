@@ -108,11 +108,51 @@ const navItems = [
         label: "Upcoming",
         link: "/Training/Upcoming",
 
+        children: [
+          {
+            label: "Module1",
+            link: "/Training/Upcoming/Module1_up",
+
+          },
+          {
+            label: "Module2",
+            link: "/Training/Upcoming/Module2_up",
+
+          },
+        ]
 
       },
       {
         label: "Proposed",
         link: "/Training/Proposed",
+
+        children: [
+          {
+            label: "Module1",
+            link: "/Training/Proposed/Module1",
+
+          },
+          {
+            label: "Module2",
+            link: "/Training/Proposed/Module2",
+
+          },
+          {
+            label: "Module3",
+            link: "/Training/Proposed/Module3",
+
+          },
+          {
+            label: "Module4",
+            link: "/Training/Proposed/Module4",
+
+          },
+          {
+            label: "Module5",
+            link: "/Training/Proposed/Module5",
+
+          },
+        ]
 
       },
 

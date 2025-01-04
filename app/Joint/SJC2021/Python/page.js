@@ -24,8 +24,7 @@ const Python = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Programming in Python
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const Python = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/sq5gg5X2sNqAVeVP7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const Python = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Atul Gupta, IIITDM Jabalpur</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +61,12 @@ const Python = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. Prabhat Kumar, NIT Patna</li>
+                <li className="ml-4">Dr. Amey Karkare, IIT Kanpur</li>
+                <li className="ml-4">Prof. RBV Subramanyam, NIT Warangal</li>
+                <li className="ml-4">Dr. Sandeep Kumar, IIT Roorkee</li>
+                <li className="ml-4">Dr. Yogesh Meena, MNIT Jaipur</li>
+                <li className="ml-4">Dr. Dinesh Tyagi, MNIT Jaipur</li>
               </ul>
             </div>
           </div>
@@ -115,20 +113,13 @@ const Python = () => {
           {/* Resource Persons - Responsive text */}
           <div className="text-center mb-6 px-2">
             <h2 className="text-lg sm:text-xl font-bold font-['Quicksand'] mb-3 sm:mb-4">
-              Resource Persons:
+              Speakers (tentative):
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              Prof. Aparajita Ojha, <strong>IIITDMJ</strong> Dr. Amey Karkare
+              <strong> IIT Kanpur</strong> Dr. Arka P. Mazumdar,
+              <strong>MNITJ</strong> Dr. Emmanuel S. Pilli,
+              <strong> MNITJ</strong>
             </p>
           </div>
 
@@ -140,130 +131,47 @@ const Python = () => {
               Course contents:
             </h2>
             <div className="border-2 border-black">
-              <p className="font-bold font-['Quicksand'] mb-3 p-2 sm:p-4 sm:mb-4 text-sm sm:text-base">
-                MODULES TOPICS :
-              </p>
-              <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-                {/* Column layout adjusted for better mobile viewing */}
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
-                    </li>
-                  </ul>
-                </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr>
+                      <th className="p-4 text-left font-['Quicksand'] w-16">
+                        S.No.
+                      </th>
+                      <th className="p-4 text-left font-['Quicksand']">
+                        MODULES TOPICS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-[#FFE81C] text-base">
+                    {[
+                      "<strong>Introduction & basics of Python Programming:</strong> History of Python, Installing Python, Executing Python Programs, Internal Working of Python, Python Implementations. Python Character Set, Token, Python Core Data Type, print() function, Assigning Value to Variable, input() function, eval() function, Formatting Number and Strings, Operators and Expressions, Differential Evolution, Social Spider Optimization)",
+
+                      "<strong>Decision Statements; Loop Control Statements; Functions, Strings</strong> Boolean Type, Boolean Operators, Using Number and Strings with Boolean Operators, Decision Making Statements and Conditional Expressions While loop, range( ) Function, For Loop, Nested Loops, Break Statement, Continue Statement; Syntax and Basics of a Function, Use of a function, Parameters and Arguments, Local and Global Scope Scope of a Variable, return statement and Recursive Functions.; str class, Inbuilt functions for String, index[] operator, traversal of String, String operators, String Operations",
+
+                      "<strong>Lists and Dictionaries; Tuples and Sets; File Handling; Pandas</strong> Creating Lists, Basic list operators, Slicing, Inbuilt functions for Lists, List operator, List Methods, Splitting, Need of Dictionary, Creating a Dictionary , Adding and Replacing Values, Retrieving Values ; Deleting Items and Traversing Dictionaries. Tuples and Sets: Creating Tuples; Tuple () Function, Inbuilt Functions for Tuples, Indexing and Slicing; Operations on Tuples; Traverse Tuples from a List, Set operators; Set class. Object-Oriented Programming: Classes and objects, methods",
+                      
+                      "<strong>Operator Overloading, Inheritance</strong>, super () and Method Overriding. File Handling: Need of File Handling, Reading/Writing Text and Numbers to/from a File; Directories on a disk. Pandas: Using Pandas, the python data analysis library and data frames",
+
+                      "<strong>Data Handling and Use Cases</strong>- RE Pattern Matching, Parsing Data, Introduction to Regression , Types of Regression , Use Cases , Exploratory data analysis , Correlation Matrix , Visualization using Matplotlib and Implementing linear regression.",
+                      
+                      "<strong>Machine Learning-</strong> Machine Learning ‐ Algorithm, Algorithms ‐ Random forest , Super vector Machine , Random Forest , Build your own model in python and Comparison between random forest and decision tree.",
+                    ].map((topic, index) => (
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 === 0 ? "bg-[#FFE81C]" : "bg-[#FFF067]"
+                        }
+                      >
+                        <td className="p-4 align-top">{index + 1}</td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: topic }}
+                        ></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -292,7 +200,7 @@ const Python = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}

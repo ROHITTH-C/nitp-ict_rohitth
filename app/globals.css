@@ -15,38 +15,35 @@
   animation: marquee 10s linear infinite;
 }
 
-/* Adjustments for larger screens */
 @media (min-width: 1024px) {
   @keyframes marquee {
     0% {
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(-40%); /* Smaller distance for larger screens */
+      transform: translateX(-40%);
     }
   }
 
   .animate-marquee {
-    animation-duration: 8s; /* Slightly faster speed for larger screens */
+    animation-duration: 8s; 
   }
 }
 
-/* Adjustments for medium screens */
 @media (max-width: 768px) {
   @keyframes marquee {
     0% {
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(-30%); /* Smaller distance for larger screens */
+      transform: translateX(-30%); 
     }
   }
   .animate-marquee {
-    animation-duration: 10s; /* Slower speed for smaller screens */
+    animation-duration: 10s; 
   }
 }
 
-/* Adjustments for extra-small screens */
 @media (max-width: 480px) {
   @keyframes marquee {
     0% {
@@ -57,6 +54,6 @@
     }
   }
   .animate-marquee {
-    animation-duration: 10s; /* Even slower for extra-small screens */
+    animation-duration: 10s; 
   }
 }

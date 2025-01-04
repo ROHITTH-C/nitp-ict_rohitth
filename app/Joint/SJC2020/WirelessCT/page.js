@@ -24,8 +24,10 @@ const WirelessCT = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              Wireless Communication Technologies for IoT
+            </h1>
+            <h1 className="text-center text-red-800 text-md sm:text-xl md:text-2xl font-bold font-['Quicksand']">
+              July 27 - August 07 , 2020
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +37,7 @@ const WirelessCT = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/mfuW4Htgp2u9UM1W6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -65,11 +67,56 @@ const WirelessCT = () => {
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
                 <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
               </ul>
+            </div>
+          </div>
+
+          <hr className="border-gray-400 my-4" />
+
+          {/* Academy Level Coordinator */}
+          <div className="text-center mb-6 px-2">
+            <h2 className="text-lg sm:text-xl font-bold font-['Quicksand'] mb-3 sm:mb-4">
+              Academy Level Coordinator:
+            </h2>
+            <div className="space-y-2 text-sm sm:text-base">
+              <p>
+                <strong>Dr. Rakesh Ranjan,</strong>
+              </p>
+              <p>
+                Email:{" "}
+                <a href="mailto:rr@nitp.ac.in" className="hover:underline">
+                  rr@nitp.ac.in
+                </a>
+              </p>
+              <p>
+                Contact:{" "}
+                <a href="tel:9334385016" className="hover:underline">
+                  9334385016
+                </a>
+              </p>
+            </div>
+
+            <br />
+
+            <div className="space-y-2 text-sm sm:text-base">
+              <p>
+                <strong>Dr. Richa Agrawal</strong>
+              </p>
+              <p>
+                Email:{" "}
+                <a
+                  href="mailto:richa.ec@nitp.ac.in"
+                  className="hover:underline"
+                >
+                  richa.ec@nitp.ac.in
+                </a>
+              </p>
+              <p>
+                Contact:{" "}
+                <a href="tel:9559090527" className="hover:underline">
+                  9559090527
+                </a>
+              </p>
             </div>
           </div>
 
@@ -82,13 +129,12 @@ const WirelessCT = () => {
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
               <p>
-                Academic (student/faculty): <strong>500 INR</strong>
+                Academic (student/faculty):
+                <strong> 500 INR (GEN/OBC) / 250 INR (SC/ST)</strong>
               </p>
               <p>
-                Industry People/ Others: <strong>1000 INR</strong>
-              </p>
-              <p>
-                Foreign Participants: <strong>4000 INR</strong>
+                Industry People/Others
+                <strong> 1000 INR/ 500INR (SC/ST)</strong>
               </p>
             </div>
           </div>
@@ -99,13 +145,13 @@ const WirelessCT = () => {
               Payment Details:
             </h2>
             <div className="space-y-2 text-sm sm:text-base">
-              <p>Bank Name: Allahabad Bank (Merge to Indian Bank)</p>
+              <p>Bank Name: Allahabad Bank</p>
               <p>Account Name: NIT Patna</p>
               <p>
                 <strong>Account No.: 50380476798</strong>
               </p>
               <p>
-                <strong>IFSC Code: IDIB000B810</strong>
+                <strong>IFSC Code: ALLA0212286</strong>
               </p>
             </div>
           </div>
@@ -118,17 +164,19 @@ const WirelessCT = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              <strong>Inaugural Speaker-</strong> Ms. Dora Smith (Academic
+              program(USA), Siemens); <br /> Dr. Ferdous Ahmed (IIIT Guwahati),
+              <br /> Prof. Ratnajit Bhattacharjee(IIT Guwahati)
+              <br /> Prof. Sukumar Nandi (IIT Guwahati),
+              <br /> Dr. Santosh Biswas (IIT Guwahati)
+              <br /> Dr. Rishikesh Kulkarni (IIT Guwahati)
+            </p>
+            <br />
+            <p className="text-sm sm:text-base">
+              <strong>Industry Speakers-</strong> Kaushlendra Singh
+              Sisodia(Senior Expert, UniConverge),
+              <br /> Mr. Rishabh Kumar(Senior Expert, UniConverge),
+              <br /> Mr. Jitesh Kumar(Senior Expert, UniConverge)
             </p>
           </div>
 
@@ -140,130 +188,92 @@ const WirelessCT = () => {
               Course contents:
             </h2>
             <div className="border-2 border-black">
-              <p className="font-bold font-['Quicksand'] mb-3 p-2 sm:p-4 sm:mb-4 text-sm sm:text-base">
-                MODULES TOPICS :
-              </p>
-              <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-                {/* Column layout adjusted for better mobile viewing */}
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
-                    </li>
-                  </ul>
-                </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr>
+                      <th className="p-4 text-left font-['Quicksand'] w-16">
+                        S.No.
+                      </th>
+                      <th className="p-4 text-left font-['Quicksand']">
+                        Module Name
+                      </th>
+                      <th className="p-4 text-left font-['Quicksand']">
+                        Topics
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-[#FFE81C] text-base">
+                    {[
+                      {
+                        name: "Introduction to IoT",
+                        topic:
+                          "What is IoT, IoT applications in different domains, Trends in IoT Market.",
+                      },
+                      {
+                        name: "Basic Architecture",
+                        topic:
+                          "Basic knowledge of IoT Architecture, Protocols Introduction (MQTT, AMQP, CoAP), Recap of Embedded Systems, Basic Concepts: Sensors, Actuators, Microcontroller units and Architecture, Application-driven Selection of Microcontrollers.",
+                      },
+                      {
+                        name: "IoT Architecture and Communication",
+                        topic:
+                          "IoT Layered Architecture, IPv6, RF Zigbee, Wi-Fi, BLE, LPWAN.",
+                      },
+                      {
+                        name: "IoT Protocols",
+                        topic: "MQTT, CoAP, 6LoWPAN design.",
+                      },
+                      {
+                        name: "Introduction to Cloud Computing",
+                        topic:
+                          "About Cloud and Cloud Computing, Benefits of Cloud, History of Cloud Computing, Deployment Models.",
+                      },
+                      {
+                        name: "Cloud Computing",
+                        topic:
+                          "Top Cloud Providers, Service Models, Service Catalogues, Different Cloud Services, Advantages of Different Offerings.",
+                      },
+                      {
+                        name: "Web Services",
+                        topic:
+                          "What are Web Services, Why Web Services, Types of Web Services, RESTful Web Services, Design Principles.",
+                      },
+                      {
+                        name: "Design Principles",
+                        topic:
+                          "Design Principles with respect to Architecture, Power, Ruggedness, Size, Weight, Security, Practical Use Cases.",
+                      },
+                      {
+                        name: "IoT Security",
+                        topic:
+                          "How Secure is IoT, Issues and Vulnerabilities, Key Aspects for Securing IoT Solutions.",
+                      },
+                      {
+                        name: "Industry 4.0",
+                        topic:
+                          "Introduction to Industry 4.0, Road to Industry 4.0, Role of Data, Information, Knowledge, and Collaboration in Future Organizations, Related Disciplines, Systems, Technologies for Enabling Industry 4.0.",
+                      },
+                    ].map((item, index) => (
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 === 0 ? "bg-[#FFE81C]" : "bg-[#FFF067]"
+                        }
+                      >
+                        <td className="p-4 align-top">{index + 1}</td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: item.name }}
+                        ></td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: item.topic }}
+                        ></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -317,6 +327,7 @@ const WirelessCT = () => {
             </p>
             <div className="space-y-1 text-sm sm:text-base">
               <p>Electronics and ICT Academy</p>
+              <h1 className="font-bold">Mr. Ram Gopal (TPO) : 8434305807</h1>
               <p>National Institute of Technology, Patna</p>
               <p>AshokRajpath, Patna 800005</p>
               <p>

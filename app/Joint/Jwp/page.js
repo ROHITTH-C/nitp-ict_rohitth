@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>Proposed</div>
+    <div>Joint Winter Programs 2022</div>
   )
 }

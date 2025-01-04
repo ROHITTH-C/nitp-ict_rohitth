@@ -24,8 +24,7 @@ const FiveGDesign = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              5G Design: Journey from Devices to Circuits
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const FiveGDesign = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScFDmQbT6WL3K_wQlii-Fxgk8qmDTbsJaAoQXBQRBuKoRRNgA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const FiveGDesign = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Gaurav Trivedi, IIT Guwahati</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,11 +61,9 @@ const FiveGDesign = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. C. Periasamy, MNITJ</li>
+                <li className="ml-4">Dr Pankaj Sharma, IIITDMJ</li>
+                <li className="ml-4">Dr. Sangeeta Singh, NIT Patna</li>
               </ul>
             </div>
           </div>
@@ -118,17 +113,8 @@ const FiveGDesign = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              Industry- Microsoft Inc. – experts from Microsoft Garage- Azure
+              Quantum
             </p>
           </div>
 
@@ -140,130 +126,46 @@ const FiveGDesign = () => {
               Course contents:
             </h2>
             <div className="border-2 border-black">
-              <p className="font-bold font-['Quicksand'] mb-3 p-2 sm:p-4 sm:mb-4 text-sm sm:text-base">
-                MODULES TOPICS :
-              </p>
-              <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-                {/* Column layout adjusted for better mobile viewing */}
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
-                    </li>
-                  </ul>
-                </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr>
+                      <th className="p-4 text-left font-['Quicksand'] w-16">
+                        S.No.
+                      </th>
+                      <th className="p-4 text-left font-['Quicksand']">
+                        MODULES TOPICS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-[#FFE81C] text-base">
+                    {[
+                      "Introduction and Tools Overview: Introduction to 5G (progression of communication channels from 1G to 5G, usage, timeline, market); Basics of RF Communication; Setup of Scikit-RF and CppSim RF Simulator",
+                      "5G MIMO Architecture and System Simulation: MIMO in 5G, MIMO for TX and RX, Basic 5G System Setup and visualization using a simulator",
+                      "RF ASIC Concepts 1: Two-port Networks, Stability, Equivalent Device Models, Impedance Matching, Biasing",
+                      "RF Simulations: Hands-on tutorial for doing Impedance Matching and Bias-T development using Scikit-RF",
+                      "RF ASIC Concepts 2: PDK Development, Layout Issues, Packaging Issues and Package Selection, Testing",
+                      "Power Amplifier Design: Basics of PA, different classes, performance matrix, design of one topology for 5G",
+                      "Power Amplifier Simulations: Design and Simulations of a couple of PA topologies using Scikit-RF",
+                      "LNA Design: LNA Basics, Design Topologies, Trade-Off Space for LNA",
+                      "LNA Simulations: Design and Simulations of a couple of LNA topologies using Scikit-RF",
+                      "RF Channel Architecture and Simulations: Different Channel Architectures and their feasibility from 5G perspective, Simulations of channel using CppSim RF System Simulator",
+                    ].map((topic, index) => (
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 === 0 ? "bg-[#FFE81C]" : "bg-[#FFF067]"
+                        }
+                      >
+                        <td className="p-4 align-top">{index + 1}</td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: topic }}
+                        ></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -292,7 +194,7 @@ const FiveGDesign = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}

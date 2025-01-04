@@ -34,7 +34,7 @@ const IOT = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/fAuKP5NXmW9jgMKq6"
+                href="https://forms.gle/q27Rm25rZbApVYNc7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -187,13 +187,13 @@ const IOT = () => {
                         IoT application in intelligent transportation system
                       </strong>
                     </li>
+                    <li className="break-words">
+                      <strong>IoT for Healthcare</strong>
+                    </li>
                   </ul>
                 </div>
                 <div className="px-4">
                   <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>IoT for Healthcare</strong>
-                    </li>
                     <li className="break-words">
                       <strong>IoT in Smart Farming</strong>
                     </li>

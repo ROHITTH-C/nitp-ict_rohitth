@@ -1,31 +1,91 @@
 export default function Announce() {
     const announcements = [
       {
-        title: "Electrical Vehicle and Energy Storage Systems: Recent Trends and Future Prospects",
-        date: "27-31 Jan 2025",
+        title: "Six Faculty Development Program",
+     
       },
       {
-        title: "Current challenges in cyber security with blockchain and IDS in IoT domain",
-        date: "20-24 Jan 2025",
+        title: "Towards 5G- The Key Enabling Technologies",
+      
       },
       {
-        title: "Nanotechnology for VLSI: Fabrication and Challenges",
-        date: "3-7 Feb 2025",
+        title: "Data structures & algorithms",
+     
       },
       {
-        title: "Future Trends in AI and Machine Learning",
-        date: "15-19 Mar 2025",
+        title: "VLSI design & embedded system",
+      
       },
       {
-        title: "Advancements in Quantum Computing",
-        date: "10-14 Apr 2025",
+        title: "Analog electronic circuit",
+    
+      },
+      {
+        title: "Fuzzy Logic & its Applications",
+      
+      },
+      {
+        title: "Fundamentals of DBMS",
+      
+      },
+      {
+        title: "FDP on Pattern Recognition  ",
+      
+      },
+      {
+        title: "Analog electronic circuit(Module:02)</",
+       
+      },
+      {
+        title: "Distributed System",
+      
+      },
+      {
+        title: "Microcontroller Embedded System Design",
+       
+      },
+      {
+        title: "FDP on IoT,",
+       
+      },
+      {
+        title: " FDP on Sensors IoT and Security during 13th October to 18th October 2017 at NIT Patna",
+      
+      },
+      {
+        title: "“Dev. of Embedded Systems using ARM Cortex M4 Processors” from 7th to 12th August, 2017",
+       
+      },
+      {
+        title: "FDP on 'Big Data and Machine Learning'",
+       
+      },
+      {
+        title: " FDP on 'Introduction to Web Development' from 13th June to 22nd June",
+      
+      },
+      {
+        title: "  Short Term FDP on ICT Skills for Teachers during 19-24 June 2017",
+      
+      },
+      {
+        title: "FDP on 'Fundamentals of Databases' from 23rd June to 03rd July",
+       
+      },
+      {
+        title: "FDP on 'Introduction to data structures and programming in C' from 01st July to 10th July.",
+      
+      },
+      {
+        title: "FDP on Hybrid Computational Intelligence.",
+       
       },
     ];
   
     return (
       <div className="max-w-lg mx-auto bg-gradient-to-b from-blue-100 to-blue-300 p-4 shadow-lg rounded-md">
         <h2 className="text-xl font-bold text-black mb-4 border-b-2 border-black">
-          Compete Courses
+          Complete Courses
         </h2>
         <div className="max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-200">
           {announcements.map((item, index) => (

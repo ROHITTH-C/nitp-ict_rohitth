@@ -24,8 +24,7 @@ const ICTTools = () => {
           {/* Header - Improved mobile layout */}
           <div className="relative mb-6 md:mb-8 pt-8 sm:pt-4">
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold font-['Quicksand']">
-              Machine Learning Application in Signal Processing and
-              Communication
+              ICT Tools for Teaching, Learning process & Institutes
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
@@ -35,7 +34,7 @@ const ICTTools = () => {
                 Brochure
               </a>
               <a
-                href="https://forms.gle/q27Rm25rZbApVYNc7"
+                href="https://forms.gle/QMKwhMcxLcZKB7hZ6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blinking font-bold text-xs sm:text-sm"
@@ -54,9 +53,7 @@ const ICTTools = () => {
                 Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">
-                  Prof. Ratnajit Bhattacharjee, IIT Guwahati
-                </li>
+                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -64,12 +61,57 @@ const ICTTools = () => {
                 Co-Principal Coordinator :
               </p>
               <ul className="list-disc pl-4 sm:pl-6 text-sm sm:text-base">
-                <li className="ml-4">Dr. Bharat Gupta, NIT Patna</li>
-                <li className="ml-4">Dr. Rakesh Ranjan, NIT Patna</li>
-                <li className="ml-4">Dr. S. J. Nanda, MNIT Jaipur,</li>
-                <li className="ml-4">Dr. Dheeraj Kumar, IIT Roorkee</li>
-                <li className="ml-4">Dr. Argyadip Roy, IIT Guwahati,</li>
+                <li className="ml-4">Dr. Gaurav Trivedi, IIT Guwahati</li>
+                <li className="ml-4">Prof. Lava Bhargava</li>
+                <li className="ml-4">Prof. Amey Karkare, IIT Kanpur</li>
+                <li className="ml-4">Dr Prashant K. Jain, IIITDM Jabalpur</li>
               </ul>
+            </div>
+          </div>
+
+          <hr className="border-gray-400 my-4" />
+
+          {/* Academy Level Coordinator */}
+          <div className="text-center mb-6 px-2">
+            <h2 className="text-lg sm:text-xl font-bold font-['Quicksand'] mb-3 sm:mb-4">
+              Academy Level Coordinator:
+            </h2>
+            <div className="space-y-2 text-sm sm:text-base">
+              <p>
+                <strong>Dr. Rakesh Ranjan, NIT Patna</strong>
+              </p>
+              <p>
+                Email:{" "}
+                <a href="mailto:rr@nitp.ac.in" className="hover:underline">
+                  rr@nitp.ac.in
+                </a>
+              </p>
+              <p>
+                Contact:{" "}
+                <a href="tel:9334385016" className="hover:underline">
+                  9334385016
+                </a>
+              </p>
+            </div>
+
+            <br />
+
+            <div className="space-y-2 text-sm sm:text-base">
+              <p>
+                <strong>Dr. Jitendra Bahadur Maurya</strong>
+              </p>
+              <p>
+                Email:{" "}
+                <a href="mailto:jbm.ec@nitp.ac.in" className="hover:underline">
+                  jbm.ec@nitp.ac.in
+                </a>
+              </p>
+              <p>
+                Contact:{" "}
+                <a href="tel:9198042481" className="hover:underline">
+                  9198042481
+                </a>
+              </p>
             </div>
           </div>
 
@@ -118,17 +160,15 @@ const ICTTools = () => {
               Resource Persons:
             </h2>
             <p className="text-sm sm:text-base">
-              <strong>EXPERTS/SPEAKERS -</strong> Prof. Ratnajit Bhattacharjee
-              (IIT Guwahati); Dr. Suresh Sundaram (IIT Guwahati); Dr. Rhythm
-              Grover (IIT Guwahati); Dr. Mitul Kumar Ahirwal (MANIT Bhopal); Dr.
-              Debanga Raj Neog (IIT Guwahati); Dr. Irshad Ansari (IIITDM
-              Jabalpur); Dr. Arghyadip Roy (IIT Guwahati); Dr. Ashish Anand (IIT
-              Guwahati); Dr. Debanga Raj Neog (IIT Guwahati); Prof. M K Bhuyan
-              (IIT Guwahati); Dr. Varun Bajaj (IIITDM Jabalpur); Dr. Amit
-              Vishwakarma (IIITDM Jabalpur); Dr. Rakesh Kumar Jha (IIITDM
-              Jabalpur); Dr. Satyasai Jagannath Nanda (MNIT Jaipur); Dr. Kuldeep
-              Singh (MNIT Jaipur); Dr. Amit Mahesh Joshi (MNIT Jaipur); Dr. G
-              Pradhan, NIT Patna
+              Awaiated Prof. D. B. Phatak, IITB; Prof. Prabhakar, IITK; Prof. K.
+              Mangala Sundar, IITM ; Prof. Binod Kumar, IITR; Prof. S. Sancheti,
+              VC, SRMIST (consent awaited) & speakers from IIT Kharagpur
+              (consent awaited); Dr. Reema Sahni, FiTT, IITD; Active Learning
+              Group Experts from host institutes- ; Prof. Aparajita Ojha,
+              IIITDMJ ; Prof. L. Bhargava, MNITJ ; Dr. Pilli Emmanuel Shubhakar,
+              MNITJ, ; Dr. Arka Prokash Mazumdar, MNITJ; Dr. A. M. Joshi, ; Dr.
+              R. K. Maddila, MNITJ,; Dr. Santosh Vipparthi, MNITJ & Prof. V.
+              Sahula, MNITJ ; Dr. Prabhat Kumar & Dr.Bharat Gupta, NIT Patna
             </p>
           </div>
 
@@ -140,130 +180,42 @@ const ICTTools = () => {
               Course contents:
             </h2>
             <div className="border-2 border-black">
-              <p className="font-bold font-['Quicksand'] mb-3 p-2 sm:p-4 sm:mb-4 text-sm sm:text-base">
-                MODULES TOPICS :
-              </p>
-              <div className="grid bg-[#FFE81C] sm:p-4 grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-                {/* Column layout adjusted for better mobile viewing */}
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Introduction to Machine Learning in Signal Processing
-                        and Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Bayesian Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Perception Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Statistical inference and Learning</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Support Vector Machine</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Regression and Classification</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Feature Selection and Dimensionality Reduction
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Clustering</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Blind Signal Separation</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Reinforcement Learning</strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>Machine Learning in Speech Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Noisy Channel Model and Application in Speech and
-                        Language Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Image Processing</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Gesture Recognition</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals I</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Biomedical Signals II</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Radar Signal Processing
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Resource Allocation in Wireless
-                        Networks Communication
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Energy-efficient Communication
-                      </strong>
-                    </li>
-                  </ul>
-                </div>
-                <div className="px-4">
-                  <ul className="list-disc space-y-4 text-sm">
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in the Internet of Things
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Edge/Fog Computing Networks
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Massive MIMO</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Optical Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Prediction/Estimation
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Machine Learning in Signal Detection</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>
-                        Machine Learning in Channel Coding/Decoding
-                      </strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Deep Learning in Wireless Communication</strong>
-                    </li>
-                    <li className="break-words">
-                      <strong>Distributed Learning in Wireless</strong>
-                    </li>
-                  </ul>
-                </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr>
+                      <th className="p-4 text-left font-['Quicksand'] w-16">
+                        S.No.
+                      </th>
+                      <th className="p-4 text-left font-['Quicksand']">
+                        MODULES TOPICS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-[#FFE81C] text-base">
+                    {[
+                      "Use of ICT: Effective use of ICT for transforming pedagogy and empowering students; Empowerment through Communication skills",
+                      "Online/Blended Learning: Adopting online/blended-learning in the teaching-learning process",
+                      "MooC: Use of MooC for content management, class organization, assessment; MooC’s deployment and use; Building Course Website and Google Suite",
+                      "Teaching Learning Tools & e-content generation: Using tools for teaching and learning - interactive whiteboards/smart screens, video conferencing, digital content creation, design of instructional material & presentation",
+                      "Content Dissemination: Management, Version Control; ICT tools for English language teaching and learning; Illustration tools and author aids - Visio",
+                      "Computer Based Training (CBT): CBT for letters generation, certificate preparation, report writing, presentation and posters preparation, spreadsheets & evaluation, research resources & bibliography management, etc.",
+                    ].map((topic, index) => (
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 === 0 ? "bg-[#FFE81C]" : "bg-[#FFF067]"
+                        }
+                      >
+                        <td className="p-4 align-top">{index + 1}</td>
+                        <td
+                          className="p-4"
+                          dangerouslySetInnerHTML={{ __html: topic }}
+                        ></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -292,7 +244,7 @@ const ICTTools = () => {
               </div>
               <div>
                 <p className="font-bold">
-                  Dr. M.P Singh (CO-CI E & ICT Academy, NIT Patna)
+                  Dr. M.P Singh (CI E & ICT Academy, NIT Patna)
                 </p>
                 <p>
                   Email:{" "}

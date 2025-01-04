@@ -46,7 +46,7 @@ const SummerCoursesPage = () => {
     {
       id: 4,
       name: "Quantum Computing",
-      BrochureLink: "QuantumComputing",
+      BrochureLink: "Quantum",
       date: "Sept 27 – Oct 8, 2021",
       coordinator: "Dr. J P Singh, NIT Patna & Dr. M P Singh, NIT Patna",
       registrationLink: "https://forms.gle/WT3Wb4DrNpcm4PB49",
@@ -86,7 +86,7 @@ const SummerCoursesPage = () => {
     {
       id: 9,
       name: "Numerical Analysis & optimization for Physicists, Scientists & Engineers using open-source- SCILAB",
-      BrochureLink: "NumericalComputation",
+      BrochureLink: "",
       date: "4th Oct – 15th Oct, 2021",
       coordinator: "Dr. Rakesh Ranjan, NIT Patna & Dr. Bharat Gupta, NIT Patna",
       registrationLink: "https://forms.gle/DrJs2pxXToQzoApw6",
@@ -163,9 +163,10 @@ const SummerCoursesPage = () => {
                     </td>
                     <td className="px-6 py-4">
                       <span className="text-sm font-medium">
-                        <Link href={`SJC2021/${course.BrochureLink}`}>
+                        {course.BrochureLink? (<Link href={`SJC2021/${course.BrochureLink}`}>
                           {course.name}
-                        </Link>
+                        </Link>): (course.name)} 
+                        {/* if brouchureLink is not present then it will not give the mouse: pointer i.e. it will render only course name without link */}
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
