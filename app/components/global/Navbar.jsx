@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoIosArrowDown, IoIosArrowDropright } from "react-icons/io";
-// import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import "./styles/Navbar.css";
 
 
@@ -14,7 +14,7 @@ import "./styles/Navbar.css";
 import useNavigationEvent from "./useNavigationEvent"
 import Home from "@/app/page";
 import { FiMenu } from "react-icons/fi";
-// import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 //List of all nav items
@@ -376,19 +376,19 @@ function SingleNavItem({ item, closeSideMenu }) {
 
   return (
     <div ref={animationParent} className="relative px-1 py-3 transition-all">
-      <p onClick={() => setItemOpen(!isItemOpen)} className="flex cursor-pointer items-center gap-2 text-neutral-900 group-hover:text-black">
+      <div onClick={() => setItemOpen(!isItemOpen)} className="flex cursor-pointer items-center gap-2 text-neutral-900 group-hover:text-black">
         {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
         <Link href={"#"} onClick={closeSideMenu} >
           {item.label}
         </Link>
         {item.children && <IoIosArrowDown className={`text-xs transition-all ${isItemOpen && "rotate-180"}`} />}
-      </p>
+      </div>
       {isItemOpen && item.children && (
-        <p className="w-auto flex-col gap-1  bg-neutral-50 py-3 transition-all flex">
+        <div className="w-auto flex-col gap-1  bg-neutral-50 py-3 transition-all flex">
           {item.children.map((child, index) => (
             <SubSidemenu key={index} item={child} />
           ))}
-        </p>
+        </div>
       )}
     </div>
   );
@@ -402,22 +402,22 @@ function SubSidemenu({ item, closeSideMenu }) {
 
   return (
     <div className="relative px-1 py-1 transition-all ">
-      <p onClick={handleSubToggle} className="flex cursor-pointer items-center gap-1 text-neutral-700 group-hover:text-black">
+      <div onClick={handleSubToggle} className="flex cursor-pointer items-center gap-1 text-neutral-700 group-hover:text-black">
         {item.iconImage && <Image src={item.iconImage} alt="item-icon" />}
         <Link href={item.link ?? "#"} onClick={closeSideMenu}>
           <span>{item.label}</span>
         </Link>
         {item.children && <IoIosArrowDown className={`text-xs transition-all ${isSubItemOpen && "rotate-180"} `} />}
-      </p>
+      </div>
       {isSubItemOpen && item.children && (
         <div className="w-auto flex-col gap-1 bg-white py-1 transition-all text-sm">
           {item.children.map((subChild, index) => (
-            <p key={index} className="flex pl-4">
+            <div key={index} className="flex pl-4">
               {item.iconImage && <Image src={subChild.iconImage} alt="item-icon" />}
               <Link href={subChild.link ?? "#"} className="flex cursor-pointer items-center py-1 text-neutral-700 hover:text-black pl-1">
                 <span>{subChild.label}</span>
               </Link>
-            </p>
+            </div>
           ))}
         </div>
       )}
