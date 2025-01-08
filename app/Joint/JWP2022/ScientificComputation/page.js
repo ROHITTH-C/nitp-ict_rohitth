@@ -28,7 +28,7 @@ const ScientificComputation = () => {
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
-                href=""
+                href="https://drive.google.com/file/d/1063QGgWCDuIkXwQ5lGUXWTgpM9B7WTPQ/view?usp=sharing"
                 className="text-xs sm:text-sm font-bold hover:underline"
               >
                 Brochure
