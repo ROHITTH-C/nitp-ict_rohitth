@@ -28,7 +28,7 @@ const DataScience = () => {
             </h1>
             <div className="absolute top-0 right-2 sm:right-4 flex flex-col sm:flex-row gap-2 sm:gap-4 text-right">
               <a
-                href=""
+                href="https://drive.google.com/file/d/1U0aqyc_0nVcaCzQBtZ7LL9UqW9WqUPiw/view?usp=drive_link"
                 className="text-xs sm:text-sm font-bold hover:underline"
               >
                 Brochure
