@@ -56,6 +56,11 @@ export default function Announce() {
       link: "https://forms.gle/KKEpFsp8WpcNm4i87", 
       date: "17 - 28 Feb 2025" 
     },
+    {
+      title: "FDP on E&ICT Quantum Computing (IBM)",
+      link:  "https://docs.google.com/forms/d/e/1FAIpQLScTzZ6x07Nukk_qHM7KNbU4Ij-P9K9_JGsWcFNj0lr49o0aRQ/viewform",
+      date: "28 Feb - 22 Mar 2025"
+    },
     { 
       title: "V2X and UAV Communications in 6G: Recent Trends and Enabling Technology", 
       link: "https://forms.gle/EN3U65rfbfgYFkT89", 
@@ -90,6 +95,11 @@ export default function Announce() {
       title: "Quantum Communication and AI/ML", 
       link: "https://forms.gle/xbnj17tKKZmxY3217", 
       date: "7 - 11 Mar 2025" 
+    },
+    {
+      title: "Two-week Hybrid Faculty Development Program on “Applications of ICT in Smart Cities",
+      link: "https://forms.gle/HJir9hfRxpUeuKHk9",
+      date: "2 - 14 April 2025"
     }
   ];
   
