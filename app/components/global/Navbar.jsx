@@ -45,15 +45,12 @@ const navItems = [
             link: "/Institute/Diety",
           },
           {
-            label: "Nit Patna",
+            label: "NIT Patna",
             link: "/Institute/Nitp",
           },
         ],
       },
-      {
-        label: "Laboratory Facilities",
-        link: "/Institute/Lab",
-      },
+    
       {
         label: "Features",
         link: "/Institute/Features",
@@ -79,7 +76,7 @@ const navItems = [
       },
     ],
   },
-  {
+/*  {
     label: "Training Program",
     link: "#",
     mlabel: "Training Program",
@@ -127,7 +124,7 @@ const navItems = [
         ],
       },
     ],
-  },
+  }, */
   {
     label: "States",
     link: "/States",
