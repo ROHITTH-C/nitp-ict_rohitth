@@ -9,14 +9,14 @@ export default function Main() {
     <>
       {/* First Row */}
       <div className="mt-3 flex flex-col sm:flex-row w-full max-w-[1090px] items-center justify-around mx-auto">
-        <Current />
-        <Compete />
+        {/* <Current />
+        <Compete /> */}
       </div>
 
       {/* Second Row */}
       <div className="mt-3 flex flex-col sm:flex-row w-full max-w-[1090px] items-center justify-around mx-auto">
-        <Gallery />
-        <UpProgram />
+        {/* <Gallery />
+        <UpProgram /> */}
       </div>
     </>
   );

@@ -1,6 +1,15 @@
 export default function Announce() {
-  
   const announcements = [
+    {
+      title: "Online Faculty Development Programme on Semiconductor Devices, Circuits & Sensors: Applications and Research Perspective",
+      link: "https://drive.google.com/file/d/1233OI0yDXjDRXPdSVv3CBIvaoBVl-EVG/view",
+      date: "09-22 Jun 2025"
+    },
+    {
+      title: "Online Faculty Development Programme on Blockchain Technology and Applications",
+      link: "https://drive.google.com/file/d/1WKe9vkh2l_k76iYYtU2mYa0P5zAPtBoK/view",
+      date: "13-23 May 2025"
+    },
     { 
       title: "Cyber Security (Dark Web)", 
       link: "https://forms.gle/aV2Dt75uRjFdNQNz7", 
@@ -102,7 +111,33 @@ export default function Announce() {
       date: "2 - 14 April 2025"
     }
   ];
-  
+
+  // Helper function to extract the latest date from a range
+  const parseEndDate = (dateStr) => {
+    const monthMap = {
+      Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+      Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
+    };
+
+    const parts = dateStr.match(/(\d{1,2})[\s-]*(\d{0,2})?\s*([A-Za-z]+)?\s*-*\s*(\d{0,2})?\s*([A-Za-z]+)?\s*(\d{4})/);
+    if (!parts) return new Date(0); // fallback if parsing fails
+
+    const [
+      , d1, d2, m1, d3, m2, yearStr
+    ] = parts;
+
+    const day = d3 || d2 || d1;
+    const month = m2 || m1;
+    const year = yearStr;
+
+    const monthIndex = monthMap[month?.substring(0, 3)] || 0;
+
+    return new Date(year, monthIndex, parseInt(day));
+  };
+
+  const sortedAnnouncements = [...announcements].sort((a, b) => {
+    return parseEndDate(b.date) - parseEndDate(a.date);
+  });
 
   return (
     <div className="max-w-lg mx-auto bg-gradient-to-b from-blue-100 to-blue-300 p-4 shadow-lg rounded-md">
@@ -110,7 +145,7 @@ export default function Announce() {
         ANNOUNCEMENTS
       </h2>
       <div className="max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-200">
-        {announcements.map((item, index) => (
+        {sortedAnnouncements.map((item, index) => (
           <div
             key={index}
             className="p-4 bg-white rounded-md shadow hover:shadow-lg mb-4"
@@ -118,6 +153,8 @@ export default function Announce() {
             <a
               href={item.link}
               className="text-blue-700 font-semibold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {item.title}
             </a>
