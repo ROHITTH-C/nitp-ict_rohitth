@@ -1,8 +1,8 @@
 // import Announcement from './Announcement';
-import Compete from './Compete';
-import Current from './Current';
-import UpProgram from './UpProgram';
-import Gallery from './Gallery';
+// import Compete from './Compete';
+// import Current from './Current';
+// import UpProgram from './UpProgram';
+// import Gallery from './Gallery';
 
 export default function Main() {
   return (
