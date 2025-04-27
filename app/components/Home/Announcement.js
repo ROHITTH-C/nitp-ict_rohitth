@@ -7,26 +7,32 @@ export default function Announce() {
       title: "Online Faculty Development Program on Theoretical Insights and Practical Strategies: Optimization, Control, Game Theory and Reinforcement Learning ",
       link: "https://drive.google.com/file/d/1NZxTJFaeKna4jcVKOptFbvDUScshew7w/view?usp=sharing",
       date: "2 - 12 June 2025"
-    }
+    },
+
+      {
+      title: "Online Faculty Development Program on QT-03 BASIC QUANTUM PROGRAMMING",
+      link: "https://drive.google.com/file/d/1NZxTJFaeKna4jcVKOptFbvDUScshew7w/view?usp=sharing",
+      date: "May 16 - 7 June 2025"
+    },
 
        {
       title: "Online Faculty Development Programme on Semiconductor Devices, Circuits & Sensors: Applications and Research Perspective  ",
       link: "https://drive.google.com/file/d/1fbzy9dpv8sRoW9JxQKOFfGV8z4O5hEoT/view?usp=sharing",
       date: "June 09 – 22, 2025"
-    }
+    },
 
       {
       title: "Online Faculty Development Programme on Blockchain Technology and Applications",
       link: "https://drive.google.com/file/d/1NZxTJFaeKna4jcVKOptFbvDUScshew7w/view?usp=sharing",
       date: "13 - 23 May 2025"
-    }
+    },
 
   
     {  
       title: "Two-week Hybrid Faculty Development Program on “Applications of ICT in Smart Cities",
       link: "https://forms.gle/HJir9hfRxpUeuKHk9",
       date: "2 - 14 April 2025"
-    }
+    },
 
     { 
       title: "Text Analytics with Deep Learning", 
