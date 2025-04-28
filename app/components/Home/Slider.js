@@ -32,18 +32,18 @@ const Slider = () => {
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className="min-w-full flex-shrink-0"
-          >
-            <img
-              src={img}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-80 object-cover"
-            />
-          </div>
-        ))}
+  {images.map((img, index) => (
+    <div
+      key={index}
+      className="w-full flex-shrink-0 h-[380px]"
+    >
+      <img
+          src={img}
+          alt={`Slide ${index + 1}`}
+          className="w-full h-full object-cover rounded-md"
+        />
+        </div>
+      ))}
       </div>
 
       {/* Navigation Arrows */}
@@ -61,7 +61,7 @@ const Slider = () => {
       </button>
 
       {/* Dots for Pagination */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
