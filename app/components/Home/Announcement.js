@@ -1,6 +1,12 @@
 export default function Announce() {
   const announcements = [
 
+        {
+      title: "Faculty Development Program on Drone and IoT Technology for GIS and Smart Farming Application",
+      link: "https://drive.google.com/file/d/1-bydZZTRxeYA_nVU1N-pW0VBqUMLjdQ9/view?usp=sharing",
+      date: "2-6 Jun 2025"
+    },
+    
     {
       title: "Online Faculty Development Programme on Semiconductor Devices, Circuits & Sensors: Applications and Research Perspective",
       link: "https://drive.google.com/file/d/1233OI0yDXjDRXPdSVv3CBIvaoBVl-EVG/view",
