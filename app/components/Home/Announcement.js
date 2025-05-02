@@ -1,6 +1,12 @@
 export default function Announce() {
   const announcements = [
 
+       {
+      title: "Faculty Development Program on AI in Medical Imaging and Diagnostics: Current Trends and Challenges",
+      link: "https://drive.google.com/file/d/1CXJE4E_Dg9apHE0m_uZdr19N0bekCrLN/view?usp=sharing",
+      date: "7-18 July 2025"
+    },
+    
         {
       title: "Faculty Development Program on Malware Analysis with Data Science",
       link: "https://drive.google.com/file/d/1VBZwM_kGIlciBttvBzSJwcoF4D_wotMD/view?usp=sharing",
