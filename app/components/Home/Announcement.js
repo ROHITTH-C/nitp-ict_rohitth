@@ -1,12 +1,17 @@
 export default function Announce() {
   const announcements = [
     {
+      title: "Faculty Development Program on Next-Generation Semiconductor Technology Advancement, Research and Applications",
+      link: "https://drive.google.com/file/d/1soWSqXqf-yalk4GSR52YqKKuuMF3q_cn/view?usp=sharing",
+      date: "23-27 June 2025"
+    },
+         
+     {
       title: "Faculty Development Program on Blockchain Technology and Applications",
       link: "https://drive.google.com/file/d/1qYWgJDG6do4OvkYqamqNzDB0RPSsuPqA/view?usp=sharing",
       date: "13-23 May 2025"
     },
          
-    
     {
       title: "Faculty Development Program on Natural Language Processing with Deep Learning",
       link: "https://drive.google.com/file/d/1s6vsOEP_6VXq1msfPhxwUPKe6O5O-Hua/view?usp=sharing",
