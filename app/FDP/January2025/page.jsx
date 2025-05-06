@@ -11,7 +11,8 @@ const courses = [
     hub: 'NIT Patna',
     spokes: [],
     beneficiaries: 101,
-    gdrive: 'https://drive.google.com/file/d/14JRy_7rKGzWU6vhr1OXbxfdc3DlqJUkr/view',
+    gdrive: "https://drive.google.com/file/d/1LfE3C0nTAjEtyhVEQ88vXWamY5gLPCCB/view"
+
   },
   {
     sno: 2,
@@ -42,6 +43,8 @@ const courses = [
     hub: 'NIT Patna',
     spokes: [],
     beneficiaries: 100,
+    
+    gdrive: "https://drive.google.com/file/d/1LfE3C0nTAjEtyhVEQ88vXWamY5gLPCCB/view"
   },
   {
     sno: 5,
@@ -52,6 +55,7 @@ const courses = [
     hub: 'NIT Patna',
     spokes: [],
     beneficiaries: 43,
+    gdrive: "https://drive.google.com/file/d/1sk3G6uSHBkfnkqyN1Xf2KieX0dTfloq6/view"
   },
   {
     sno: 5.1,
@@ -62,6 +66,7 @@ const courses = [
     hub: 'NIT Patna',
     spokes: ['MECET, Hyderabad'],
     beneficiaries: 51,
+    gdrive: "https://drive.google.com/file/d/1sk3G6uSHBkfnkqyN1Xf2KieX0dTfloq6/view"
   },
   {
     sno: 6,
@@ -72,6 +77,7 @@ const courses = [
     hub: 'NIT Patna',
     spokes: [],
     beneficiaries: 52,
+    gdrive: "https://drive.google.com/file/d/1ptTSYuupJ8R3c2yICVoMaKSBjAV5I35H/view"
   }
 ];
 

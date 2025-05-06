@@ -11,7 +11,7 @@ const courses = [
       hub: 'NIT Patna',
       spokes: [],
       beneficiaries: 112,
-      gdrive:"https://drive.google.com/file/d/1sH1jTXCWznB8MBoBnwIe9Y0EIQ9ylWJt/view"
+      gdrive:"https://drive.google.com/file/d/1LuL3MAANpGT0QFDxeDWE1LrSoySCTKEG/view"
     },
     {
       sno: 2,
@@ -21,7 +21,8 @@ const courses = [
       end: '14-02-2025',
       hub: 'NIT Patna',
       spokes: ['NIT Tiruchirapalli'],
-      beneficiaries: 90
+      beneficiaries: 90,
+      gdrive: "https://drive.google.com/file/d/1_Ln9je38tKrWpYrsgb4ZcWIlq5wicbW6/view"
     },
     {
       sno: 3,
@@ -31,7 +32,8 @@ const courses = [
       end: '02-07-2025',
       hub: 'NIT Patna',
       spokes: ['Malla Reddy College of Engineering & Technology'],
-      beneficiaries: 84
+      beneficiaries: 84,
+      gdrive: "https://drive.google.com/file/d/17LJELbWxx40uYm91Y5FD0yLdobXzJTNm/view"
     },
     {
       sno: 4,
@@ -41,7 +43,8 @@ const courses = [
       end: '23-02-2025',
       hub: 'NIT Patna',
       spokes: ['KNIT Sultanpur'],
-      beneficiaries: 67
+      beneficiaries: 67,
+      gdrive: "https://drive.google.com/file/d/1USJ2c4AfJE9XhkytU1jqXaxF08a6UijP/view"
     },
     {
       sno: 5,
@@ -51,7 +54,8 @@ const courses = [
       end: '28-02-2025',
       hub: 'NIT Patna',
       spokes: ['BEU Patna', 'Malla Reddy College'],
-      beneficiaries: 116
+      beneficiaries: 116,
+      gdrive: "https://drive.google.com/file/d/1z2ua6HVdtzYy6Hz_z3ISLKt__0F6gppA/view"
     },
     {
       sno: 6,
@@ -61,7 +65,8 @@ const courses = [
       end: '03-02-2025',
       hub: 'NIT Patna',
       spokes: ['NIT Agartala', 'UPES Dehradun', 'Techno Main Salt Lake'],
-      beneficiaries: 77
+      beneficiaries: 77,
+      gdrive: "https://drive.google.com/file/d/1x9l_wLChvmxoq3afTtumRzV3GhpEHNo_/view"
     },
     {
       sno: 7,
@@ -71,7 +76,8 @@ const courses = [
       end: '14-02-2025',
       hub: 'NIT Patna',
       spokes: [],
-      beneficiaries: 94
+      beneficiaries: 94,
+      gdrive: "https://drive.google.com/file/d/14or3JBOPJl1lDtgRx-k1SqKfpcfP0zxj/view"
     },
     {
       sno: 8,
@@ -81,7 +87,8 @@ const courses = [
       end: '28-02-2025',
       hub: 'NIT Patna',
       spokes: [],
-      beneficiaries: 130
+      beneficiaries: 130,
+      gdrive: "https://drive.google.com/file/d/1JA5KM2dYAUt9FYHaJBCRn6Jx2IHFsF61/view"
     },
     {
       sno: 9,
@@ -91,7 +98,8 @@ const courses = [
       end: '22-02-2025',
       hub: 'NIT Patna',
       spokes: [],
-      beneficiaries: 103
+      beneficiaries: 103,
+      gdrive: "https://drive.google.com/file/d/1x9l_wLChvmxoq3afTtumRzV3GhpEHNo_/view"
     },
     {
       sno: 10,
@@ -121,7 +129,8 @@ const courses = [
       end: '14-02-2025',
       hub: 'NIT Patna',
       spokes: [],
-      beneficiaries: 64
+      beneficiaries: 64,
+      gdrive: "https://drive.google.com/file/d/1XsO21xBqLx3pEqrCZBIsvZtGAcnIu87V/view"
     },
     {
       sno: 13,
@@ -131,7 +140,8 @@ const courses = [
       end: '21-02-2025',
       hub: 'NIT Patna',
       spokes: [],
-      beneficiaries: 52
+      beneficiaries: 52,
+      gdrive: "https://drive.google.com/file/d/1kDVRzp47VXL6Bnb94f7Oot3YfdKaeTcr/view"
     },
     {
       sno: 14,
@@ -141,7 +151,8 @@ const courses = [
       end: '02-09-2025',
       hub: 'Delhi University, Delhi',
       spokes: [],
-      beneficiaries: 135
+      beneficiaries: 135,
+      gdrive: "https://drive.google.com/file/d/1JA5KM2dYAUt9FYHaJBCRn6Jx2IHFsF61/view"
     },
     {
       sno: 15,
@@ -171,7 +182,8 @@ const courses = [
       end: '28-02-2025',
       hub: 'NIT Jamshedpur',
       spokes: [],
-      beneficiaries: 57
+      beneficiaries: 57,
+      gdrive: "https://drive.google.com/file/d/1BgFq9T3t1qEQ9EuZYnIU9ZR_H9Ze5PcC/view"
     }
   ];  
 
