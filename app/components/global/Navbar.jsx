@@ -160,6 +160,29 @@ const navItems = [
       },
     ],
   },
+  {
+    label: "FDP(FY 2024-25)",
+    link: "#",
+    mlabel: "FDP(FY 2024-25)",
+    children: [
+      {
+        label: "January 2025",
+        link: "/FDP/January2025",
+      },
+      {
+        label: "February 2025",
+        link: "/FDP/February2025",
+      },
+      {
+        label: "March 2025",
+        link: "/FDP/March2025",
+      },
+      {
+        label: "Misc",
+        link: "/FDP/Misc",
+      }
+    ],
+  },
 ];
 //main nav funtion
 export default function Navbar() {
@@ -253,7 +276,7 @@ function NavItem({ item }) {
     >
       <Link
         href={item.link ?? "#"}
-        className="flex cursor-pointer items-center gap-2 px-10 py-3 text-white transition-all group-hover:text-blue-800"
+        className="flex cursor-pointer items-center gap-2 px-10 py-3 text-white font-bold transition-all group-hover:text-blue-800"
       >
         <span>{item.label}</span>
         {item.children && (
@@ -264,7 +287,7 @@ function NavItem({ item }) {
       </Link>
       {item.children && (
         <div
-          className={`absolute right-0 top-10 w-auto flex-col gap-1  bg-blue-700  shadow-md transition-all ${
+          className={`absolute right-0 top-10 w-auto flex-col gap-1 text-white font-semibold bg-blue-700  shadow-md transition-all ${
             isOpen ? "flex" : "hidden"
           } group`}
         >
