@@ -16,7 +16,7 @@
 'use client';
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { Toaster } from 'react-hot-toast';
 import Navbar from "./components/global/Navbar";
 import { Suspense } from "react";
 
@@ -35,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      <Toaster position="top-right" reverseOrder={false} />
         <Navbar />
         <Suspense >
           <ProgressBar

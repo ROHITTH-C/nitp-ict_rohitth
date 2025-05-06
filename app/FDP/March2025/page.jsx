@@ -17,7 +17,7 @@ const courses = [
         "BIT Sindri"
       ],
       beneficiaries: 297,
-      gdrive: "https://drive.google.com/file/d/185b_TlZ_VmR4kXNiXsu_MvoQ-vwk91lF/view"
+      gdrive: "https://drive.google.com/file/d/1vd5p9TlEgtq5JKptQErRXfyzHG-ZPXUN/view"
     },
     {
       sno: 2,
@@ -43,7 +43,7 @@ const courses = [
       hub: "NIT Patna",
       spokes: [],
       beneficiaries: 60,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1FpwGcxu-9zTjqYTOhgH9rRKcqes58u2t/view"
     },
     {
       sno: 4,
@@ -54,7 +54,7 @@ const courses = [
       hub: "NIT Patna",
       spokes: [],
       beneficiaries: 51,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1-BPZ4MpYPDcR0D4oLpXZQksbV0StybW2/view"
     },
     {
       sno: 5,
@@ -68,7 +68,7 @@ const courses = [
         "UPES University Dehradun"
       ],
       beneficiaries: 111,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1ZuhBJW6yR_jHepFESPm6hp0OFNT98Diw/view"
     },
     {
       sno: 6,
@@ -83,7 +83,7 @@ const courses = [
         "UPES University Dehradun"
       ],
       beneficiaries: 215,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1BgFq9T3t1qEQ9EuZYnIU9ZR_H9Ze5PcC/view"
     },
     {
       sno: 7,
@@ -94,7 +94,7 @@ const courses = [
       hub: "NIT Patna",
       spokes: [],
       beneficiaries: 65,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1v4PIXopCw9g6aZCvI2W5sn-ZOV3WyDgU/view"
     },
     {
       sno: 8,
@@ -127,7 +127,7 @@ const courses = [
       hub: "NIT Patna",
       spokes: [],
       beneficiaries: 70,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1JA5KM2dYAUt9FYHaJBCRn6Jx2IHFsF61/view"
     },
     {
       sno: 11,
@@ -138,7 +138,7 @@ const courses = [
       hub: "NIT Patna (Joint)",
       spokes: [],
       beneficiaries: 77,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1x9l_wLChvmxoq3afTtumRzV3GhpEHNo_/view"
     },
     {
       sno: 12,
@@ -171,7 +171,7 @@ const courses = [
       hub: "NIT Patna",
       spokes: ["UPES, Dehradun, Uttarakhand"],
       beneficiaries: 62,
-      gdrive: ""
+      gdrive: "https://drive.google.com/file/d/1OCaUB2avo712u-kftBuM7MnOIwWrtSxb/view"
     }
   ];
   
