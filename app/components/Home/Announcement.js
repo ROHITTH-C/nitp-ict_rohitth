@@ -1,6 +1,42 @@
 export default function Announce() {
   const announcements = [
+    {
+      title: "Faculty Development Program on Next-Generation Semiconductor Technology Advancement, Research and Applications",
+      link: "https://drive.google.com/file/d/1soWSqXqf-yalk4GSR52YqKKuuMF3q_cn/view?usp=sharing",
+      date: "23-27 June 2025"
+    },
+         
+     {
+      title: "Faculty Development Program on Blockchain Technology and Applications",
+      link: "https://drive.google.com/file/d/1qYWgJDG6do4OvkYqamqNzDB0RPSsuPqA/view?usp=sharing",
+      date: "13-23 May 2025"
+    },
+         
+    {
+      title: "Faculty Development Program on Natural Language Processing with Deep Learning",
+      link: "https://drive.google.com/file/d/1s6vsOEP_6VXq1msfPhxwUPKe6O5O-Hua/view?usp=sharing",
+      date: "24 June -1 July 2025"
+    },
+    
+       {
+      title: "Faculty Development Program on AI in Medical Imaging and Diagnostics: Current Trends and Challenges",
+      link: "https://drive.google.com/file/d/1CXJE4E_Dg9apHE0m_uZdr19N0bekCrLN/view?usp=sharing",
+      date: "7-18 July 2025"
+    },
+    
+        {
+      title: "Faculty Development Program on Malware Analysis with Data Science",
+      link: "https://drive.google.com/file/d/1VBZwM_kGIlciBttvBzSJwcoF4D_wotMD/view?usp=sharing",
+      date: "12-18 May 2025"
+    },
 
+       {
+      title: "Faculty Development Program on Drone and IoT Technology for GIS and Smart Farming Application",
+      link: "https://drive.google.com/file/d/1-bydZZTRxeYA_nVU1N-pW0VBqUMLjdQ9/view?usp=sharing",
+      date: "2-6 Jun 2025"
+    },
+
+    
     {
       title: "Online Faculty Development Programme on Semiconductor Devices, Circuits & Sensors: Applications and Research Perspective",
       link: "https://drive.google.com/file/d/1233OI0yDXjDRXPdSVv3CBIvaoBVl-EVG/view",
