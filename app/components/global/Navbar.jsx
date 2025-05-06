@@ -176,6 +176,10 @@ const navItems = [
       {
         label: "March 2025",
         link: "/FDP/March2025",
+      },
+      {
+        label: "Misc",
+        link: "/FDP/Misc",
       }
     ],
   },
