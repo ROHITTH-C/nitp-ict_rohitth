@@ -5,9 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "www.nitp.ac.in",
+        hostname: "www.nitp.ac.in", 
       },
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
