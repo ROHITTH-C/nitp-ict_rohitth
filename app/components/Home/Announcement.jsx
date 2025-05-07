@@ -92,7 +92,7 @@ export default function Announcement({ className }) {
     };
 
     // Start auto-scrolling timer
-    scrollTimerRef.current = setInterval(rotateAnnouncements, 1000);
+    scrollTimerRef.current = setInterval(rotateAnnouncements, 2000);
 
     // Cleanup on component unmount
     return () => {

@@ -8,13 +8,17 @@ import { Suspense } from "react";
 
 
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 interface RootLayoutProps {
   children: React.ReactNode;
 }
-
+const metadata: Metadata = {
+  title: 'Electronics and ICT Academy',
+  description: 'Electronics and ICT Academy',
+} 
 
 export default function RootLayout({ children }: RootLayoutProps) {
 
