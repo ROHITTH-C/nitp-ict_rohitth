@@ -18,7 +18,6 @@
 .desktopnav {
   position: relative;
   align-items: center;
-  
   margin: auto;
 }
 
@@ -103,7 +102,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 50;
 }
 
 /* Desktop Dropdown Styles */
@@ -120,23 +119,27 @@
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 40;
 }
 
 .dropdown .dropdown {
   top: 0;
   left: 100%;
+  z-index: 45;
 }
 
 /* Mobile Dropdown Styles */
 @media (max-width: 768px) {
   .header-top {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
   }
+
   .desktopnav {
-    height: fill;
+    height: auto;
   }
+
   .header-top img {
     height: 30px;
   }
@@ -153,46 +156,22 @@
     display: none;
   }
 
-  .max-w-7xl {
-    max-width: fit-content !important;
-    margin: auto;
-  }
-
   .navbar-content {
-    border-radius: 0rem;
+    border-radius: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .header-top {
-    border-radius: 0rem;
+    border-radius: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .header-top {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
   }
 
   .header-top .right-content .text-sm {
     font-size: 0.575rem;
   }
 
-  .mobiletest {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    justify-content: space-between;
-    max-width: 80rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
+  /* Mobile Navigation */
   .mobile-nav {
     position: fixed;
     left: 0;
@@ -202,16 +181,30 @@
     display: flex;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 100;
+    z-index: 9999;
   }
 
   .mobile-nav-content {
     height: 100%;
     width: 85%;
     background-color: white;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     overflow-y: auto;
     position: relative;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-in-out;
+    z-index: 10000;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 
   .mobile-nav-close {
@@ -219,7 +212,17 @@
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    z-index: 101;
+    color: #2563eb;
+    z-index: 10001;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #f0f7ff;
+    transition: all 0.2s ease;
+  }
+
+  .mobile-nav-close:hover {
+    background-color: #dbeafe;
+    transform: scale(1.05);
   }
 
   .header-top .right-content .textmob {
@@ -231,38 +234,6 @@
     font-size: 0.575rem;
     font-weight: 700;
   }
-
-  .header-top {
-    display: flex;
-    align-items: center;
-  }
-
-  .header-top img {
-    height: 40px;
-    width: 40px;
-  }
-
-  .header-top .left-content {
-    flex: 0 0 auto;
-    margin-right: 0px;
-  }
-
-  .header-top .right-content {
-    flex: 1 1 auto;
-  }
-
-  .header-top .institute-info {
-    display: none;
-  }
-
-  .dropdown {
-    position: relative;
-  }
-
-  .dropdown .dropdown {
-    position: relative;
-    left: 0;
-  }
 }
 
 .relative1 .absolute1 {
@@ -270,6 +241,6 @@
 }
 
 .relative1:hover .absolute1,
-.group1:hover .absolute1 {
-  display: flex;
+.relative1:focus .absolute1 {
+  display: block;
 }

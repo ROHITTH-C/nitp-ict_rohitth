@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-full mx-auto p-2 mb-10">
+      <div className="flex flex-col sm:flex-row w-full mx-auto p-2 mb-10 relative z-10">
         {/* Slider Section */}
         <div className="mt-2 sm:w-2/3 w-full">
           <Slider />
@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       {/* Main Section */}
-      <div className="p-2">
+      <div className="p-2 relative z-10">
         <Main />
       </div>
     </>
