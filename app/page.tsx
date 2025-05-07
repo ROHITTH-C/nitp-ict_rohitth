@@ -16,7 +16,7 @@ export default function Home() {
 
         {/* Announcement Section */}
         <div className="mt-2 sm:ml-2 sm:w-1/3 w-full">
-          <Announcement />
+          <Announcement className=""/>
         </div>
       </div>
 
