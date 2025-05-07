@@ -248,8 +248,8 @@ export default function Main() {
               </svg>
             </div>
             <h3 className="font-semibold text-gray-800">Text Analytics</h3>
-          </div>
-          
+      </div>
+
           <div className="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
             <div className="w-14 h-14 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -260,6 +260,6 @@ export default function Main() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
   );
 }
