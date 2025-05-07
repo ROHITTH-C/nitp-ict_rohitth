@@ -21,7 +21,7 @@ export default function AdminDashboard() {
       
       const data = await response.json();
       // Sort announcements - new ones first
-      const sortedAnnouncements = [...data.announcements || []].sort((a, b) => {
+      const sortedAnnouncements = [...data || []].sort((a, b) => {
         // First sort by is_new (1 or true on top)
         if (a.is_new === 1 && b.is_new !== 1) return -1;
         if (a.is_new !== 1 && b.is_new === 1) return 1;
