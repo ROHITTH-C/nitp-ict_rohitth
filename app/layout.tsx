@@ -6,7 +6,6 @@ import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 import { Suspense } from "react";
 
-
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import { Metadata } from "next";
 
@@ -15,15 +14,28 @@ const inter = Inter({ subsets: ["latin"] });
 interface RootLayoutProps {
   children: React.ReactNode;
 }
-const metadata: Metadata = {
-  title: 'Electronics and ICT Academy',
-  description: 'Electronics and ICT Academy',
-} 
+
+// This metadata is not used in client components
+// For SEO purposes, you'd need to create a separate metadata.ts file
+// or remove 'use client' directive and use export const metadata directly
+const seoMetadata = {
+  title: 'NIT Patna Electronics and ICT Academy',
+  description: 'National Institute of Technology Patna - Electronics and ICT Academy website. Information about courses, programs, and educational resources.',
+  keywords: 'NIT Patna, Electronics and ICT Academy, E-ICT, technology education, faculty development programs',
+}
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  // Set document title dynamically on client side
+  if (typeof document !== 'undefined') {
+    document.title = seoMetadata.title;
+  }
 
   return (
     <html lang="en">
+      <head>
+        <meta name="description" content={seoMetadata.description} />
+        <meta name="keywords" content={seoMetadata.keywords} />
+      </head>
       <body className={inter.className}>
         <Toaster position="top-right" reverseOrder={false} />
         <div className="flex flex-col min-h-screen">

@@ -2,16 +2,31 @@ import { NextResponse } from 'next/server';
 import { query } from '@/app/lib/db';
 
 // Get all announcements
-export async function GET() {
+export async function GET(request) {
   try {
+    // Extract limit from URL query parameters
+    const { searchParams } = new URL(request.url);
+    const limit = searchParams.get('limit');
+    
+    let sql = 'SELECT * FROM announcements ORDER BY date DESC';
+    let queryParams = [];
+    
+    // Add limit if specified
+    if (limit && !isNaN(parseInt(limit))) {
+      sql += ' LIMIT ?';
+      queryParams.push(parseInt(limit));
+    }
+    
     const announcements = await query({
-      query: 'SELECT * FROM announcements ORDER BY created_at DESC',
+      query: sql,
+      values: queryParams,
     });
-
-    return NextResponse.json({ announcements }, { status: 200 });
+    
+    return NextResponse.json(announcements);
   } catch (error) {
+    console.error('Error fetching announcements:', error);
     return NextResponse.json(
-      { message: 'Error fetching announcements', error: error.message },
+      { error: 'Failed to fetch announcements' },
       { status: 500 }
     );
   }

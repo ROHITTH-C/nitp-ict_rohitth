@@ -4,7 +4,12 @@ import Main from './components/Home/page';
 // import Gallery from "./components/Home/Gallery";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { defaultMetadata } from './metadata';
+import type { Metadata } from 'next';
 
+
+
+// Client components are imported here but the page itself is a server component
 export default function Home() {
   return (
     <>

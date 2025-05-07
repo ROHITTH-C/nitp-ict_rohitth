@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
-import { ChevronUp, ChevronDown } from 'lucide-react';
+import { ChevronUp, ChevronDown, ArrowRight, Bell } from 'lucide-react';
 
 export default function Announcement({ className }) {
   const [announcements, setAnnouncements] = useState([]);
@@ -28,12 +28,12 @@ export default function Announcement({ className }) {
         
         const data = await response.json();
         // Sort announcements - new ones first
-        const sortedAnnouncements = [...data.announcements || []].sort((a, b) => {
+        const sortedAnnouncements = [...data || []].sort((a, b) => {
           // First sort by is_new (1 or true on top)
           if (a.is_new && !b.is_new) return -1;
           if (!a.is_new && b.is_new) return 1;
           // Then sort by date (most recent first)
-          return new Date(b.created_at || 0) - new Date(a.created_at || 0);
+          return new Date(b.date || 0) - new Date(a.date || 0);
         });
         setAnnouncements(sortedAnnouncements);
         
@@ -150,25 +150,39 @@ export default function Announcement({ className }) {
       <div
         className="px-4 py-3 bg-blue-600 text-white font-semibold text-lg sm:text-xl rounded-t-lg flex justify-between items-center"
       >
-        <span>Announcements</span>
-        {announcements.length > 0 && (
-          <div className="flex space-x-1">
-            <button 
-              onClick={handleScrollUp}
-              className="p-1 rounded-full hover:bg-blue-500 transition-colors"
-              aria-label="Scroll up"
-            >
-              <ChevronUp size={18} />
-            </button>
-            <button 
-              onClick={handleScrollDown}
-              className="p-1 rounded-full hover:bg-blue-500 transition-colors"
-              aria-label="Scroll down"
-            >
-              <ChevronDown size={18} />
-            </button>
-          </div>
-        )}
+        <span className="flex items-center">
+          <Bell className="mr-2" size={20} />
+          Announcements
+        </span>
+        
+        <div className="flex items-center space-x-2">
+          {announcements.length > 0 && (
+            <div className="flex space-x-1">
+              <button 
+                onClick={handleScrollUp}
+                className="p-1 rounded-full hover:bg-blue-500 transition-colors"
+                aria-label="Scroll up"
+              >
+                <ChevronUp size={18} />
+              </button>
+              <button 
+                onClick={handleScrollDown}
+                className="p-1 rounded-full hover:bg-blue-500 transition-colors"
+                aria-label="Scroll down"
+              >
+                <ChevronDown size={18} />
+              </button>
+            </div>
+          )}
+          
+          <Link 
+            href="/announcements"
+            className="ml-2 inline-flex items-center text-sm bg-white text-blue-600 px-2 py-1 rounded hover:bg-blue-50 transition-colors"
+          >
+            View All
+            <ArrowRight size={14} className="ml-1" />
+          </Link>
+        </div>
       </div>
       <div
         className="bg-white border border-gray-300 rounded-b-md shadow h-[300px] sm:h-[350px] relative"
