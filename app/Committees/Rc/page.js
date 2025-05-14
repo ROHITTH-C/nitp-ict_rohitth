@@ -71,12 +71,12 @@ const ResearchCommittee = () => {
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">10</td>
-                <td className="px-4 py-2 border border-gray-300">Dr. M. P. Singh, Co-PI- E&ICT Academy, NIT Patna</td>
+                <td className="px-4 py-2 border border-gray-300">Dr. M. P. Singh, PI- E&ICT Academy, NIT Patna</td>
                 <td className="px-4 py-2 border border-gray-300">Member</td>
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">11</td>
-                <td className="px-4 py-2 border border-gray-300">Dr. Bharat Gupta, PI – E&ICT Academy, NIT Patna</td>
+                <td className="px-4 py-2 border border-gray-300">Dr.Bikash Chandra Sahana, Co PI – E&ICT Academy, NIT Patna</td>
                 <td className="px-4 py-2 border border-gray-300">Member</td>
               </tr>
             </tbody>
