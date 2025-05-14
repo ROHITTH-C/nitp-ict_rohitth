@@ -82,12 +82,12 @@ const Committees = () => {
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">12</td>
-                <td className="px-4 py-2 border border-gray-300">Dr. M. P. Singh, Co-PI- E&ICT Academy, NIT Patna</td>
+                <td className="px-4 py-2 border border-gray-300">Dr. M. P. Singh, PI- E&ICT Academy, NIT Patna</td>
                 <td className="px-4 py-2 border border-gray-300">Member</td>
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">13</td>
-                <td className="px-4 py-2 border border-gray-300">Dr. Bharat Gupta, Co-PI- E&ICT Academy, NIT Patna</td>
+                <td className="px-4 py-2 border border-gray-300">Dr.Bikash Chandra Sahana, Co-PI- E&ICT Academy, NIT Patna</td>
                 <td className="px-4 py-2 border border-gray-300">Member</td>
               </tr>
             </tbody>
