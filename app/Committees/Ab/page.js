@@ -139,14 +139,14 @@ export default function Committees() {
                   <td className="border border-gray-300 px-4 py-2">14</td>
                   <td className="border border-gray-300 px-4 py-2">Member</td>
                   <td className="border border-gray-300 px-4 py-2">
-                  Dr. Bharat Gupta, Chief Investigator – ICT Academy, NIT Patna
+                  Prof. M. P . Singh, Chief Investigator – ICT Academy, NIT Patna
                   </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-2">15</td>
                   <td className="border border-gray-300 px-4 py-2">Member</td>
                   <td className="border border-gray-300 px-4 py-2">
-                  Dr. M. P . Singh, Co-Chief Investigator E & ICT Academy, NIT Patna
+                  Dr. Bikash Chandra Sahana, Co-Chief Investigator E & ICT Academy, NIT Patna
                   </td>
                 </tr>
               </tbody>
