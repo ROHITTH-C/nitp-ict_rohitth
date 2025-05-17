@@ -69,20 +69,50 @@ const navItems = [
     iconImage: Users,
     children: [
       {
-        label: "Advisory Board",
-        link: "/Committees/Ab",
+        label:"Phase-I",
+        link:"#",
         iconImage: Users,
+        children:[
+          {
+            label: "Advisory Board",
+            link: "/Committees/Ab",
+            iconImage: Users,
+          },
+          {
+            label: "Academic Committee",
+            link: "/Committees/Ac",
+            iconImage: GraduationCap,
+          },
+          {
+            label: "Research Committee",
+            link: "/Committees/Rc",
+            iconImage: BookOpen,
+          },
+        ]
       },
       {
-        label: "Academic Committee",
-        link: "/Committees/Ac",
-        iconImage: GraduationCap,
-      },
-      {
-        label: "Research Committee",
-        link: "/Committees/Rc",
-        iconImage: BookOpen,
-      },
+        label: "Phase-II",
+        link: "#",
+        iconImage: Users,
+        children: [
+          {
+            label: "PI/CO",
+            link: "/phase2/piCo",
+            iconImage: Users,
+          },
+          {
+            label: "Composition Academic Council",
+            link: "/phase2/compositionAcademicCouncil",
+            iconImage: Users,
+          },
+          {
+            label: "Constitution of PRSG -EICT Academy Scheme",
+            link: "/phase2/constitutionPrsg",
+            iconImage: Users,
+          }
+        ],
+      }
+      
     ],
   },
 /*  {
