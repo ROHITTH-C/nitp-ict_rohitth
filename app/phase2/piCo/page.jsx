@@ -4,13 +4,13 @@ const members = [
   {
     sno: 1,
     name: 'Prof. Maheshwari Prasad Singh',
-    title: 'HoD & Professor',
+    title: 'PI- E&ICT Academy, NIT Patna',
     department: 'Computer Science and Engineering',
   },
   {
     sno: 2,
     name: 'Dr. Bikash Chandra Sahana',
-    title: 'Associate Professor',
+    title: 'CO-PI- E&ICT Academy, NIT Patna',
     department: 'Electronics and Communication Engineering',
   },
 ];
@@ -26,7 +26,7 @@ export default function PiCoCommittee() {
               <th className="py-2 px-4 border-b">S.No</th>
               <th className="py-2 px-4 border-b">Name</th>
               <th className="py-2 px-4 border-b">Designation</th>
-              <th className="py-2 px-4 border-b">Department</th>
+              {/* <th className="py-2 px-4 border-b">Department</th> */}
             </tr>
           </thead>
           <tbody>
@@ -35,7 +35,7 @@ export default function PiCoCommittee() {
                 <td className="py-2 px-4 border-b">{member.sno}</td>
                 <td className="py-2 px-4 border-b">{member.name}</td>
                 <td className="py-2 px-4 border-b">{member.title}</td>
-                <td className="py-2 px-4 border-b">{member.department}</td>
+                {/* <td className="py-2 px-4 border-b">{member.department}</td> */}
               </tr>
             ))}
           </tbody>
