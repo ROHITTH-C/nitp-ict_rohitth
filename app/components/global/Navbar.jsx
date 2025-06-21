@@ -234,6 +234,12 @@ const navItems = [
       // }
     ],
   },
+  {
+    label: "Gallery & Videos",
+    link: "/gallery",
+    mlabel: "Gallery & Videos",
+    iconImage: Calendar,
+  },
 ];
 
 //main nav funtion
