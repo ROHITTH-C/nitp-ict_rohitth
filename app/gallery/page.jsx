@@ -162,19 +162,6 @@ export default function PublicGallery() {
           </div> */}
         </div>
 
-        {error && (
-          <div className="bg-red-100 text-red-700 border border-red-400 px-4 py-3 rounded mb-8 text-center max-w-3xl mx-auto flex items-center justify-center gap-2">
-            <FiAlertCircle className="text-xl" />
-            {error}
-            <button
-              onClick={fetchGallery}
-              className="ml-4 text-red-700 underline hover:text-red-800"
-            >
-              Try again
-            </button>
-          </div>
-        )}
-
         {loading && !galleryItems.length ? (
           <div className="flex justify-center py-20">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600" />
