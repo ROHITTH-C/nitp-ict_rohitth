@@ -11,6 +11,17 @@ export default function NewImage() {
   const [error, setError] = useState('');
   const router = useRouter();
 
+  const getEmbedUrl = (url) => {
+    if (!url) return '';
+    if (url.includes('drive.google.com') && url.includes('/view')) {
+      return url.replace('/view', '/preview');
+    }
+    return url;
+  };
+
+  const isVideo = (url) =>
+    url.includes('drive.google.com') || url.endsWith('.mp4') || url.endsWith('.mov');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -46,6 +57,8 @@ export default function NewImage() {
       setUploading(false);
     }
   };
+  
+  const previewUrl = getEmbedUrl(driveUrl);
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -99,6 +112,27 @@ export default function NewImage() {
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
             </div>
+
+            {driveUrl && (
+              <div className="mt-4">
+                <p className="text-sm text-gray-500 mb-2">Preview:</p>
+                {isVideo(driveUrl) ? (
+                  <iframe
+                    src={previewUrl}
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    className="w-full h-64 rounded-lg border border-gray-300"
+                    title={title}
+                  ></iframe>
+                ) : (
+                  <img
+                    src={previewUrl}
+                    alt="Preview"
+                    className="rounded-lg max-h-64 border border-gray-300"
+                  />
+                )}
+              </div>
+            )}
 
             <div className="flex justify-end">
               <button
