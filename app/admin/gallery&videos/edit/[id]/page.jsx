@@ -11,9 +11,8 @@ export default function EditImageVideo() {
   const router = useRouter();
 
   const [title, setTitle] = useState('');
-  const [file, setFile] = useState(null);
+  const [driveUrl, setDriveUrl] = useState('');
   const [previewUrl, setPreviewUrl] = useState('');
-  const [originalUrl, setOriginalUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
@@ -27,7 +26,7 @@ export default function EditImageVideo() {
         if (!res.ok) throw new Error(data.message || 'Failed to fetch item');
 
         setTitle(data.title);
-        setOriginalUrl(data.url);
+        setDriveUrl(data.url);
         setPreviewUrl(data.url);
       } catch (err) {
         setError(err.message);
@@ -39,51 +38,26 @@ export default function EditImageVideo() {
     fetchItem();
   }, [id]);
 
-  const handleFileChange = (e) => {
-    const selectedFile = e.target.files?.[0];
-    if (selectedFile) {
-      setFile(selectedFile);
-      setPreviewUrl(URL.createObjectURL(selectedFile));
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
 
-    if (!title) {
-      setError('Title is required.');
+    if (!title || !driveUrl) {
+      setError('Both title and Google Drive URL are required.');
       return;
     }
 
     try {
       setSaving(true);
-      let fileUrl = originalUrl;
-
-      if (file) {
-        const uploadForm = new FormData();
-        uploadForm.append('file', file);
-        const uploadRes = await fetch('/api/upload', {
-          method: 'POST',
-          body: uploadForm,
-        });
-
-        const uploadData = await uploadRes.json();
-        if (!uploadRes.ok || !uploadData.url) {
-          throw new Error(uploadData.message || 'Upload failed');
-        }
-        fileUrl = uploadData.url;
-      }
 
       const updateRes = await fetch(`/api/gallery/edit/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, url: fileUrl }),
+        body: JSON.stringify({ title, url: driveUrl.trim() }),
       });
 
       const updateData = await updateRes.json();
-      if (!updateRes.ok)
-        throw new Error(updateData.message || 'Failed to update');
+      if (!updateRes.ok) throw new Error(updateData.message || 'Failed to update');
 
       router.push('/admin/gallery&videos');
     } catch (err) {
@@ -139,15 +113,21 @@ export default function EditImageVideo() {
             </div>
 
             <div>
-              <label htmlFor="file" className="block text-sm font-medium text-gray-700">
-                Replace File (Optional)
+              <label htmlFor="driveUrl" className="block text-sm font-medium text-gray-700">
+                Google Drive Link*
               </label>
               <input
-                type="file"
-                id="file"
-                accept="image/*,video/*"
-                onChange={handleFileChange}
-                className="mt-1 block w-full"
+                type="url"
+                id="driveUrl"
+                name="driveUrl"
+                value={driveUrl}
+                onChange={(e) => {
+                  setDriveUrl(e.target.value);
+                  setPreviewUrl(e.target.value);
+                }}
+                required
+                placeholder="https://drive.google.com/..."
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
             </div>
 
@@ -157,8 +137,7 @@ export default function EditImageVideo() {
                 {(() => {
                   const isVideo =
                     previewUrl.includes('drive.google.com') ||
-                    previewUrl.endsWith('.mp4') ||
-                    file?.type?.startsWith('video');
+                    previewUrl.endsWith('.mp4');
 
                   const embedUrl = isVideo && previewUrl.includes('drive.google.com')
                     ? previewUrl.replace('/view', '/preview')
