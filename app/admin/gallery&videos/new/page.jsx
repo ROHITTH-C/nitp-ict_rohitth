@@ -2,69 +2,41 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Save, UploadCloud, ImageIcon, Video } from 'lucide-react';
+import { ArrowLeft, UploadCloud } from 'lucide-react';
 
 export default function NewImage() {
   const [title, setTitle] = useState('');
-  const [file, setFile] = useState(null);
-  const [previewUrl, setPreviewUrl] = useState('');
+  const [driveUrl, setDriveUrl] = useState('');
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState('');
   const router = useRouter();
-
-  const handleFileChange = (e) => {
-    const selectedFile = e.target.files?.[0];
-
-    if (selectedFile) {
-      setFile(selectedFile);
-      const preview = URL.createObjectURL(selectedFile);
-      setPreviewUrl(preview);
-    } else {
-      setFile(null);
-      setPreviewUrl('');
-    }
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
 
-    if (!title || !file) {
-      setError('Both title and file are required.');
+    if (!title || !driveUrl) {
+      setError('Both title and Google Drive URL are required.');
       return;
     }
 
     try {
       setUploading(true);
 
-      const uploadForm = new FormData();
-      uploadForm.append('file', file);
-
-      const uploadRes = await fetch('/api/upload', {
-        method: 'POST',
-        body: uploadForm,
-      });
-
-      const uploadData = await uploadRes.json();
-
-      if (!uploadRes.ok || !uploadData.url) {
-        throw new Error(uploadData.message || 'File upload failed');
-      }
-
-      const galleryPayload = {
+      const payload = {
         title,
-        url: uploadData.url,
+        url: driveUrl.trim(),
       };
 
-      const saveRes = await fetch('/api/gallery/add_new', {
+      const res = await fetch('/api/gallery/add_new', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(galleryPayload),
+        body: JSON.stringify(payload),
       });
 
-      if (!saveRes.ok) {
-        const saveData = await saveRes.json();
-        throw new Error(saveData.message || 'Failed to save image info');
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.message || 'Failed to save image info');
       }
 
       router.push('/admin/gallery&videos');
@@ -113,39 +85,20 @@ export default function NewImage() {
             </div>
 
             <div>
-              <label htmlFor="file" className="block text-sm font-medium text-gray-700">
-                Upload File (Image/Video)*
+              <label htmlFor="driveUrl" className="block text-sm font-medium text-gray-700">
+                Google Drive Link (Public Shareable)*
               </label>
               <input
-                type="file"
-                id="file"
-                accept="image/*,video/*"
-                onChange={handleFileChange}
+                type="url"
+                id="driveUrl"
+                name="driveUrl"
+                value={driveUrl}
+                onChange={(e) => setDriveUrl(e.target.value)}
                 required
-                className="mt-1 block w-full"
+                placeholder="https://drive.google.com/..."
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
             </div>
-
-            {previewUrl && (
-              <div className="mt-4">
-                <p className="text-sm text-gray-500 mb-2">Preview:</p>
-                {file?.type.startsWith('image') ? (
-                  <img
-                    src={previewUrl}
-                    alt="Preview"
-                    className="rounded-lg max-h-64 border border-gray-300"
-                  />
-                ) : (
-                  <video
-                    controls
-                    className="rounded-lg max-h-64 border border-gray-300"
-                  >
-                    <source src={previewUrl} type={file?.type} />
-                    Your browser does not support the video tag.
-                  </video>
-                )}
-              </div>
-            )}
 
             <div className="flex justify-end">
               <button
@@ -154,7 +107,7 @@ export default function NewImage() {
                 className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
               >
                 <UploadCloud size={18} />
-                {uploading ? 'Uploading...' : 'Upload & Save'}
+                {uploading ? 'Saving...' : 'Save'}
               </button>
             </div>
           </form>
