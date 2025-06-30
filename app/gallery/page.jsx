@@ -211,7 +211,7 @@ export default function PublicGallery() {
                 >
                   {renderMedia(item)}
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-1 line-clamp-1">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-1">
                       {item.title}
                     </h3>
                     {item.description && (
