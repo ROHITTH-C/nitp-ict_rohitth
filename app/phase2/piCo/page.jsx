@@ -7,7 +7,7 @@ const members = [
     name: 'Prof. Maheshwari Prasad Singh',
     title: 'PI - E&ICT Academy, NIT Patna',
     department: 'Computer Science and Engineering',
-    email: 'Ci.eictpatna@nitp.ac.in',
+    email: 'ci.eictpatna@nitp.ac.in',
     profileUrl: 'https://www.nitp.ac.in/profile/mps@nitp.ac.in',
     image: 'https://www.nitp.ac.in/_next/image?url=https%3A%2F%2Fdrive.google.com%2Fthumbnail%3Fauthuser%3D0%26sz%3Dw320%26id%3D1f2bFo1KIY1xF6MOmTAjM3gNYZcUySBaG&w=640&q=75'
   },
