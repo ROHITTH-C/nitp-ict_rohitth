@@ -1,4 +1,4 @@
-name: Deploy to ict-ec2-Aashish
+name: Deploy to eict-nitp EC2 Instance
 
 on:
   push:
@@ -16,10 +16,10 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_nitp_ict
+          chmod 600 ~/.ssh/id_nitp_ict
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
       - name: Run deploy script on EC2
         run: |
-          ssh -i ~/.ssh/id_ed25519 ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo bash -c "cd /root/nitp-ict && git pull && ./deploy.sh"'
+          ssh -i ~/.ssh/id_nitp_ict ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 'sudo bash -c "cd /root && ./latest_nitp_ict_deploy.sh"'
