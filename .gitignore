@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+#testing for ci/cd workflows
 
 # testing
 /coverage
