@@ -39,4 +39,5 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+#testing of eict-nitp ci/cd pipeline
 next-env.d.ts
