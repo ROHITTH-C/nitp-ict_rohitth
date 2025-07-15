@@ -8,7 +8,7 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const limit = searchParams.get('limit');
     
-    let sql = 'SELECT * FROM announcements ORDER BY date DESC';
+    let sql = 'SELECT * FROM announcements ORDER BY start_date DESC ,updated_at DESC';
     let queryParams = [];
     
     // Add limit if specified
@@ -35,12 +35,12 @@ export async function GET(request) {
 // Create a new announcement
 export async function POST(request) {
   try {
-    const { title, link, date, is_new = true } = await request.json();
+    const { title, link, is_new = true ,start_date, end_date} = await request.json();
 
     // Validate required fields
-    if (!title || !date) {
+    if (!title || !start_date || !end_date) {
       return NextResponse.json(
-        { message: 'Title and date are required' },
+        { message: 'Title and Dates are required' },
         { status: 400 }
       );
     }
@@ -48,10 +48,10 @@ export async function POST(request) {
     // Insert announcement into database
     const result = await query({
       query: `
-        INSERT INTO announcements (title, link, date, is_new)
-        VALUES (?, ?, ?, ?)
+        INSERT INTO announcements (title, link, start_date,end_date, is_new)
+        VALUES (?, ?, ?, ?,?)
       `,
-      values: [title, link, date, is_new],
+      values: [title, link, start_date,end_date, is_new],
     });
 
     return NextResponse.json(

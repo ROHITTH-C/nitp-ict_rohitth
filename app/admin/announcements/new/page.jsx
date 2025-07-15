@@ -9,6 +9,8 @@ export default function NewAnnouncement() {
     title: '',
     date: '',
     link: '',
+    start_date:"",
+    end_date:"",
     is_new: true
   });
   const [loading, setLoading] = useState(false);
@@ -93,7 +95,7 @@ export default function NewAnnouncement() {
               />
             </div>
 
-            <div>
+            {/* <div>
               <label htmlFor="date" className="block text-sm font-medium text-gray-700">
                 Date*
               </label>
@@ -110,6 +112,36 @@ export default function NewAnnouncement() {
               <p className="mt-1 text-sm text-gray-500">
                 Format: DD-MM YYYY or any other consistent format
               </p>
+            </div> */}
+
+            <div>
+              <label htmlFor="start_date" className="block text-sm font-medium text-gray-700">
+                Start Date*
+              </label>
+              <input
+                type="date"
+                name="start_date"
+                id="start_date"
+                value={formData.start_date}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="end_date" className="block text-sm font-medium text-gray-700">
+                End Date*
+              </label>
+              <input
+                type="date"
+                name="end_date"
+                id="end_date"
+                value={formData.end_date}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              />
             </div>
 
             <div>

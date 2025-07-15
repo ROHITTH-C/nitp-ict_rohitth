@@ -165,7 +165,10 @@ export default function AdminDashboard() {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {announcement.date}
+                        {
+                          announcement.start_date ?
+                             `${new Date(announcement?.start_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${new Date(announcement?.end_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}, ${new Date(announcement.start_date).getFullYear()}`: announcement?.date 
+                        }
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm">
                         {announcement.link ? (

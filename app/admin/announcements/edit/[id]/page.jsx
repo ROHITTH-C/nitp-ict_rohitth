@@ -8,8 +8,9 @@ export default function EditAnnouncement({ params }) {
   const { id } = params;
   const [formData, setFormData] = useState({
     title: '',
-    date: '',
     link: '',
+    start_date: '',
+    end_date: '',
     is_new: false
   });
   const [loading, setLoading] = useState(false);
@@ -17,25 +18,35 @@ export default function EditAnnouncement({ params }) {
   const [error, setError] = useState('');
   const router = useRouter();
 
+ const toDateInputValue = (iso) => {
+  if (!iso) return '';
+  const date = new Date(iso);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+
+
   useEffect(() => {
     const fetchAnnouncement = async () => {
       try {
         setFetchLoading(true);
         const response = await fetch(`/api/announcements/${id}`);
-        
         if (!response.ok) {
           throw new Error('Failed to fetch announcement');
         }
-        
+
         const data = await response.json();
         const announcement = data.announcement;
-        
-        // Format date if needed - leave as is since we have various date formats
+
         setFormData({
-          title: announcement.title,
-          date: announcement.date,
+          title: announcement.title || '',
           link: announcement.link || '',
-          is_new: announcement.is_new === 1 // Convert from MySQL boolean (0/1) to JS boolean
+          start_date: toDateInputValue(announcement.start_date),
+          end_date: toDateInputValue(announcement.end_date),
+          is_new: announcement.is_new === 1
         });
       } catch (error) {
         setError(error.message);
@@ -78,7 +89,6 @@ export default function EditAnnouncement({ params }) {
         throw new Error(data.message || 'Failed to update announcement');
       }
 
-      // Redirect back to admin dashboard
       router.push('/admin');
     } catch (error) {
       setError(error.message);
@@ -102,7 +112,7 @@ export default function EditAnnouncement({ params }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <h1 className="text-2xl font-bold text-blue-700">Edit Announcement</h1>
-            <button 
+            <button
               onClick={() => router.push('/admin')}
               className="text-gray-600 hover:text-gray-900"
             >
@@ -137,21 +147,33 @@ export default function EditAnnouncement({ params }) {
             </div>
 
             <div>
-              <label htmlFor="date" className="block text-sm font-medium text-gray-700">
-                Date*
+              <label htmlFor="start_date" className="block text-sm font-medium text-gray-700">
+                Start Date*
               </label>
               <input
-                type="text"
-                name="date"
-                id="date"
-                value={formData.date}
+                type="date"
+                name="start_date"
+                id="start_date"
+                value={formData.start_date}
                 onChange={handleChange}
                 required
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               />
-              <p className="mt-1 text-sm text-gray-500">
-                Format: DD-MM YYYY or any other consistent format
-              </p>
+            </div>
+
+            <div>
+              <label htmlFor="end_date" className="block text-sm font-medium text-gray-700">
+                End Date*
+              </label>
+              <input
+                type="date"
+                name="end_date"
+                id="end_date"
+                value={formData.end_date}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              />
             </div>
 
             <div>
@@ -208,4 +230,4 @@ export default function EditAnnouncement({ params }) {
       </div>
     </div>
   );
-} 
+}
