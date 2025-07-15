@@ -48,10 +48,10 @@ export async function PUT(request, { params }) {
       );
     }
     
-    const { title, link, date, is_new } = await request.json();
+    const { title, link, start_date,end_date, is_new } = await request.json();
 
     // Validate required fields
-    if (!title || !date) {
+    if (!title || !start_date || !end_date) {
       return NextResponse.json(
         { message: 'Title and date are required' },
         { status: 400 }
@@ -75,10 +75,10 @@ export async function PUT(request, { params }) {
     await query({
       query: `
         UPDATE announcements 
-        SET title = ?, link = ?, date = ?, is_new = ?
+        SET title = ?, link = ?, start_date = ?,end_date = ? , is_new = ?
         WHERE id = ?
       `,
-      values: [title, link, date, is_new, id],
+      values: [title, link, start_date,end_date, is_new, id],
     });
 
     return NextResponse.json(
