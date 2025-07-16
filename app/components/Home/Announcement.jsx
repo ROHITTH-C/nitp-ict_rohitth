@@ -218,7 +218,10 @@ export default function Announcement({ className }) {
                         {announcement.title}
                       </Link>
                       <p className="text-xs text-gray-600 mt-1.5">
-                        {announcement.date}
+                        {
+                          announcement.start_date ?
+                             `${new Date(announcement?.start_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${new Date(announcement?.end_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}, ${new Date(announcement.start_date).getFullYear()}`: announcement?.date 
+                        }
                       </p>
                     </div>
                   </div>

@@ -1,17 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Save } from 'lucide-react';
 
 export default function EditAnnouncement({ params }) {
-  const { id } = params;
+  const { id } = use(params);
   const [formData, setFormData] = useState({
     title: '',
     link: '',
     start_date: '',
     end_date: '',
-    is_new: false
+    is_new: false,
   });
   const [loading, setLoading] = useState(false);
   const [fetchLoading, setFetchLoading] = useState(true);
@@ -34,9 +34,7 @@ export default function EditAnnouncement({ params }) {
       try {
         setFetchLoading(true);
         const response = await fetch(`/api/announcements/${id}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch announcement');
-        }
+        if (!response.ok) throw new Error('Failed to fetch announcement');
 
         const data = await response.json();
         const announcement = data.announcement;
@@ -46,7 +44,7 @@ export default function EditAnnouncement({ params }) {
           link: announcement.link || '',
           start_date: toDateInputValue(announcement.start_date),
           end_date: toDateInputValue(announcement.end_date),
-          is_new: announcement.is_new === 1
+          is_new: announcement.is_new === 1,
         });
       } catch (error) {
         setError(error.message);
@@ -56,9 +54,7 @@ export default function EditAnnouncement({ params }) {
       }
     };
 
-    if (id) {
-      fetchAnnouncement();
-    }
+    if (id) fetchAnnouncement();
   }, [id]);
 
   const handleChange = (e) => {
@@ -84,10 +80,7 @@ export default function EditAnnouncement({ params }) {
       });
 
       const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Failed to update announcement');
-      }
+      if (!response.ok) throw new Error(data.message || 'Failed to update announcement');
 
       router.push('/admin');
     } catch (error) {
