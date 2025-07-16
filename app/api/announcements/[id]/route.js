@@ -2,10 +2,9 @@ import { NextResponse } from 'next/server';
 import { query } from '@/app/lib/db';
 
 // Get a specific announcement
-export async function GET(request, { params }) {
+export async function GET(request, context) {
   try {
-    // Ensure params is awaited properly
-    const id = params?.id;
+    const { id } = context.params; 
     
     if (!id) {
       return NextResponse.json(
@@ -13,7 +12,7 @@ export async function GET(request, { params }) {
         { status: 400 }
       );
     }
-    
+
     const announcements = await query({
       query: 'SELECT * FROM announcements WHERE id = ?',
       values: [id],
